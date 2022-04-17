@@ -1,0 +1,235 @@
+.advan {
+    background-color: var(--color-light_black);
+}
+
+.advan__container {
+    color: var(--color-white);
+}
+
+.advan__block {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.advan__swiper {
+    position: relative;
+    width: 58%;
+    margin: auto 0;
+    margin-left: -5px;
+    margin-right: 30px;
+}
+
+.advan__swiper::after {
+    position: absolute;
+    content: '';
+    top: -6px;
+    right: 160px;
+    bottom: 160px;
+    left: 0px;
+    background-image: url(/img/adv_marker.png);
+    background-repeat: no-repeat;
+    background-size: 33%;
+    z-index: 2;
+}
+
+.advan__swiper1 {
+    overflow: hidden;
+}
+
+.advan__nav {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.adv__bullet {
+    position: absolute;
+    left: calc(50% - 54px);
+    bottom: 11px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--color-bullet1);
+}
+
+.adv__bullet::after {
+    position: absolute;
+    content: '';
+    left: 46px;
+    bottom: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--color-bullet2);
+}
+
+.adv__bullet::before {
+    position: absolute;
+    content: '';
+    left: 92px;
+    bottom: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--color-bullet3);
+}
+
+.advan__pag {
+    margin-right: 10px;
+    text-align: center;
+}
+
+.advan__pag .swiper-pagination-bullet {
+    position: relative;
+    background-color: transparent;
+    width: 6px;
+    height: 6px;
+    opacity: 1;
+}
+
+.advan__pag .swiper-pagination-bullet::after {
+    position: absolute;
+    content: "";
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background-color: transparent;
+}
+
+.advan__pag.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.advan__pag.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0px 20px;
+}
+
+.advan__pag .swiper-pagination-bullet-active {
+    background-color: var(--color-promo);
+}
+
+.advan__pic {
+    position: relative;
+    overflow: hidden;
+}
+
+.advan__pic::before {
+    content: "";
+    position: relative;
+    z-index: 1;
+    display: block;
+    padding-top: 87%;
+    box-sizing: border-box;
+}
+
+.advan__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+}
+
+.advan__card {
+    width: 40%;
+}
+
+.advan__title {
+    margin-bottom: 18px;
+    color: var(--color-promo);
+}
+
+.advan__text1,
+.advan__text2 {
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: var(--font-size-middle);
+    line-height: 180%;
+}
+
+.advan__text1 {
+    padding-top: 30px;
+    margin-bottom: 12px;
+    background-image: url(/img/adv_decor.svg);
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-size: auto;
+    background-position: top center;
+}
+
+.advan__text2 {
+    margin-bottom: 30px;
+}
+
+.advan__mark {
+    color: var(--color-promo_color);
+}
+
+.advan__value {
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1em;
+}
+
+.advan__btn {
+    align-items: center;
+    padding: 23px 10px;
+    margin-bottom: 41px;
+    border: 2px solid var(--color-promo);
+    box-sizing: border-box;
+    border-radius: 100px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--font-size-big);
+    line-height: 1em;
+    color: var(--color-promo);
+    transition-property: color, background-color, border-color;
+    transition: .3s ease-in-out;
+}
+
+.advan__btn svg {
+    margin-right: 8px;
+}
+
+.advan__btn .advan__path1,
+.advan__btn .advan__path2 {
+    transition: fill .3s ease-in-out;
+}
+
+.advan__btn:hover:not(:focus-visible),
+.advan__btn:focus-visible,
+.advan__btn:active:not(:focus-visible) {
+    color: var(--color-black);
+}
+
+.advan__btn:hover:not(:focus-visible) {
+    background-color: var(--color-promo);
+}
+
+.advan__btn:focus-visible,
+.advan__btn:active:not(:focus-visible) {
+    background-color: var(--color-promo_shade);
+}
+
+.advan__btn:focus-visible {
+    border-color: var(--color-promo);
+}
+
+.advan__btn:active:not(:focus-visible) {
+    border-color: var(--color-promo_shade);
+}
+
+.advan__btn:hover:not(:focus-visible) .advan__path1,
+.advan__btn:focus-visible svg .advan__path2,
+.advan__btn:active:not(:focus-visible) svg .advan__path1 {
+    fill: var(--color-black);
+}
+
+.advan__btn:hover:not(:focus-visible) .advan__path2,
+.advan__btn:focus-visible svg .advan__path1 {
+    fill: var(--color-promo);
+}
+
+.advan__btn:active:not(:focus-visible) svg .advan__path2 {
+    fill: var(--color-promo_shade);
+}

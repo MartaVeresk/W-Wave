@@ -1,0 +1,202 @@
+.about {
+    background-color: var(--color-black);
+}
+
+.about__container {}
+
+.about__block {
+    position: relative;
+}
+
+.about__block::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 60%;
+    right: 0;
+    bottom: 0;
+    background-image: url(/img/about_Spiral.svg);
+    background-repeat: no-repeat;
+}
+
+.about__block::after {
+    position: absolute;
+    content: '';
+    top: 16px;
+    left: 77%;
+    right: 0;
+    bottom: 0;
+    background-image: url(/img/about_Dawn.svg);
+    background-repeat: no-repeat;
+}
+
+.about__title {
+    margin-bottom: 12px;
+    color: var(--color-white);
+}
+
+.about__subtitle {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: var(--font-size-big);
+    line-height: 1.50em;
+    color: var(--color-text_gray);
+}
+
+.about__subtext {
+    max-width: 58%;
+    margin-bottom: 27px;
+    font-weight: 400;
+    font-size: var(--font-size-big);
+    line-height: 1.6;
+    color: var(--color-text_gray);
+}
+
+.about__list {
+    /* margin-top: 13px; */
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 30px;
+    column-gap: 30px;
+}
+
+.about__item {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 var(--width-card-about);
+    max-width: var(--width-card-about);
+    justify-content: space-between;
+}
+
+.about__card {
+    text-align: left;
+}
+
+.about__img {
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.about__h3 {
+    margin-bottom: 8px;
+    color: var(--color-white);
+}
+
+.about__text {
+    font-weight: 400;
+    font-size: var(--font-size-middle);
+    line-height: calc(24/16);
+    color: var(--color-text_gray);
+}
+
+
+/* form */
+
+.about__form {
+    font-weight: 400;
+    font-size: var(--font-size-big);
+    line-height: 1em;
+    color: var(--color-text_gray);
+}
+
+.about__textarea {
+    resize: none;
+    max-width: 920px;
+    width: 100%;
+    min-height: 150px;
+    padding-left: 32px;
+    padding-top: 30px;
+    margin-bottom: 26px;
+    border-radius: 30px;
+}
+
+.about__input_name,
+.about__input_email {
+    max-width: 445px;
+    width: 100%;
+    min-height: 70px;
+    padding-left: 32px;
+    margin-bottom: 28px;
+    border-radius: 40px;
+}
+
+.about__input_name {
+    display: inline;
+    margin-right: 30px;
+}
+
+.about__label_ {
+    display: inline;
+}
+
+.about__label_ .input-error {
+    top: -15px;
+}
+
+.about__btn {
+    display: block;
+    margin-bottom: 26px;
+}
+
+.about__label {
+    position: relative;
+    padding-left: 24px;
+    font-weight: 500;
+    font-size: var(--font-size-small);
+    line-height: 1em;
+    cursor: pointer;
+}
+
+.about__checkbox {
+    /* не виден , но доступен*/
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    /* visibility: hidden; */
+    /* opacity: 0; */
+}
+
+.about__check-img::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    top: -2px;
+    left: 0px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid var(--color-white);
+    background-color: transparent;
+    transition: border-color .3s ease-in-out
+}
+
+.about__check-img::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    border: 1px solid var(--color-white);
+    border-radius: 3px;
+    background-color: transparent;
+    background-image: url(/img/about_check.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+.about__checkbox:checked+.about__check-img::after {
+    opacity: 1;
+}
+
+.about__checkbox:focus-visible+.about__check-img::before {
+    border-color: var(--color-primary_light);
+}
+
+.about__checkbox.error+.about__check-img::before {
+    border-color: var(--color-red);
+}

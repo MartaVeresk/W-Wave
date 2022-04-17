@@ -1,0 +1,265 @@
+.modal-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    padding-top: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 100vh;
+    width: 100%;
+    z-index: 20;
+    /* overflow: hidden; */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.modal {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    color: var(--color-white);
+    background-color: var(--color-black);
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: none;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.modal-overlay--visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.modal--visible {
+    display: block;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 39px;
+    right: 39px;
+    z-index: 99;
+}
+
+.modal-close-btn svg circle,
+.modal-close-btn svg path {
+    z-index: 99;
+}
+
+.modal-close-btn svg circle,
+.modal-close-btn svg path {
+    transition: stroke .3s ease-in-out;
+}
+
+.modal-close-btn:focus-visible svg circle,
+.modal-close-btn:focus-visible svg path {
+    stroke: var(--color-primary_light);
+}
+
+.modal-close-btn:hover:not(:focus-visible) svg circle,
+.modal-close-btn:hover:not(:focus-visible) svg path {
+    stroke: var(--color-primary);
+}
+
+.modal-close-btn:active:not(:focus-visible) svg circle,
+.modal-close-btn:active:not(:focus-visible) svg path {
+    stroke: var(--color-primary_shade);
+}
+
+
+/* Scroll */
+
+.myScroll {
+    width: 399px;
+    max-height: 310px;
+    padding: 20px 30px;
+    margin-right: 58px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    /* color: #333333; */
+    background-color: var(--color-black);
+}
+
+.simplebar-content-wrapper {
+    overflow: auto;
+}
+
+.simplebar-scrollbar::before {
+    background-color: var(--color-text_gray) !important;
+}
+
+
+/* modal entry*/
+
+.modal-entry {
+    width: 824px;
+    max-height: 655px;
+    /* min-height: calc(100vh-120px); */
+}
+
+.modal-entry__title {
+    margin-bottom: 17px;
+}
+
+.modal-entry__subtitle {
+    margin-bottom: 30px;
+}
+
+.modal-entry__mark {
+    color: var(--color-primary);
+}
+
+.modal-entry__label {
+    display: block;
+}
+
+.modal-entry__input {
+    max-width: 445px;
+    width: 100%;
+    min-height: 70px;
+    padding-left: 32px;
+    margin-bottom: 30px;
+    border-radius: 40px;
+    border-color: var(--color-white);
+    color: var(--color-text_gray);
+}
+
+.modal-entry__button {
+    margin-bottom: 30px;
+}
+
+.modal-entry__line {
+    margin: 0;
+    margin-bottom: 30px;
+    width: 100%;
+    color: var(--color-light_color_40);
+}
+
+.modal-entry__text {
+    margin-bottom: 30px;
+}
+
+.modal-entry__link:not(:last-child) {
+    margin-right: 40px;
+}
+
+.modal-entry__link svg.icon {
+    width: 40px;
+    height: 40px;
+    fill: var(--color-text_gray);
+}
+
+.modal-entry__link svg.icon {
+    transition: fill .3s ease-in-out;
+}
+
+.modal-entry__link:focus-visible svg.icon {
+    fill: var(--color-primary_light);
+}
+
+.modal-entry__link:hover:not(:focus-visible) svg.icon {
+    fill: var(--color-primary);
+}
+
+.modal-entry__link:active:not(:focus-visible) svg.icon {
+    fill: var(--color-primary_shade);
+}
+
+
+/* modal end */
+
+
+/* modal adv*/
+
+.modal-adv {
+    position: relative;
+    max-width: 824px;
+    width: 100%;
+    max-height: 628px;
+}
+
+.modal-adv__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('../img/advan_1.png');
+    background-repeat: no-repeat;
+    background-position: 60px 180px;
+    background-size: 267px 234px;
+}
+
+.modal-adv__bg:before {
+    position: absolute;
+    content: '';
+    top: 180px;
+    left: 343px;
+    right: 0;
+    bottom: 0;
+    background-image: url('../img/advan_2.png');
+    background-repeat: no-repeat;
+    background-position: left 0px;
+    background-size: 267px 234px;
+}
+
+.modal-adv__bg:after {
+    position: absolute;
+    content: '';
+    top: 180px;
+    left: 626px;
+    right: 0;
+    bottom: 0;
+    background-image: url('../img/advan_3.png');
+    background-repeat: no-repeat;
+    background-position: left 0px;
+    background-size: 200px 234px;
+}
+
+.modal-adv__title {
+    padding-left: 62px;
+    margin-bottom: 30px;
+    background-image: url('../img/market.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+}
+
+.modal-adv__subtitle {
+    margin-bottom: 314px;
+}
+
+.modal-adv__mark {
+    color: var(--color-promo);
+}
+
+.modal-adv__text {
+    position: relative;
+    padding-top: 42px;
+    margin-bottom: 16px;
+}
+
+.modal-adv__text::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 12px;
+    width: 100%;
+    background-image: url(/img/advan_decor.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/* madal end */

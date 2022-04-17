@@ -1,0 +1,141 @@
+.footer {
+    background-color: var(--color-light_black);
+}
+
+.footer__container-top {
+    position: relative;
+}
+
+.footer__wrap {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__logo {
+    margin-bottom: 20px;
+    margin-right: 15px;
+}
+
+.footer__link:not(:last-child) {
+    margin-right: 21px;
+}
+
+.footer__link svg.icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--color-text_gray);
+}
+
+.footer__link svg.icon {
+    transition: fill .3s ease-in-out;
+}
+
+.footer__link:focus-visible svg.icon {
+    fill: var(--color-primary_light);
+}
+
+.footer__link:hover:not(:focus-visible) svg.icon {
+    fill: var(--color-primary);
+}
+
+.footer__link:active:not(:focus-visible) svg.icon {
+    fill: var(--color-primary_shade);
+}
+
+.footer__middle {
+    position: absolute;
+    top: -36px;
+    left: 22%;
+    left: calc(50% - 305px);
+}
+
+.footer__title {
+    color: var(--color-white);
+    margin-bottom: 4px;
+}
+
+.footer__subtitle {
+    font-weight: 400;
+    font-size: var(--font-size-middle);
+    line-height: calc(24/16);
+    color: var(--color-text_gray);
+    margin-bottom: 12px;
+}
+
+.footer__form {
+    font-weight: 400;
+    font-size: var(--font-size-middle);
+    line-height: 1em;
+    color: var(--color-white);
+}
+
+.footer__input_email {
+    max-width: 350px;
+    width: 100%;
+    min-height: 40px;
+    padding-left: 18px;
+    margin-bottom: 28px;
+    border-radius: 40px;
+    border-color: var(--color-white);
+}
+
+.footer__error {
+    top: 2px;
+    left: 18px;
+}
+
+.footer__list {
+    flex-flow: column wrap;
+    gap: 20px;
+    column-gap: 109px;
+    min-width: 445px;
+    width: 100%;
+    max-height: 88px;
+    height: 100%;
+    font-weight: 400;
+    font-size: var(--font-size-middle);
+    line-height: 1em;
+    color: var(--color-white);
+}
+
+.footer__item .link-event::before {
+    top: -3px;
+    bottom: -1px;
+    left: -5px;
+    right: -5px;
+}
+
+.footer__btn {
+    margin-right: auto;
+    padding: 10px 29px;
+}
+
+.footer__container-bottom {
+    position: relative;
+}
+
+.footer__container-bottom::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 12px;
+    top: 0;
+    left: 0;
+    background-image: url(/img/footer_decor.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer__container-pad {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.footer__bottom {
+    text-align: center;
+    font-weight: 400;
+    font-size: var(--font-size-middle);
+    line-height: 1em;
+    color: var(--color-text_gray);
+}

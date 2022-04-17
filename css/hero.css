@@ -1,0 +1,39 @@
+/* hero */
+
+.hero__container {
+    position: relative;
+}
+
+.hero__container::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 100px;
+    background: url(../img/microphone.png) no-repeat right center;
+    height: 100%;
+    width: 100%;
+    background-size: 26.5%;
+    z-index: -1;
+}
+
+.hero__title {
+    margin-top: 2px;
+    margin-bottom: 13px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: var(--font-size-h1);
+    line-height: 1em;
+}
+
+.hero__descr {
+    max-width: 56%;
+    margin-bottom: 45px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--font-size-middle);
+    line-height: 1.5em;
+}
+
+.hero__mark {
+    color: var(--color-primary);
+}
