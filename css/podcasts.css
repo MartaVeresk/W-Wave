@@ -24,6 +24,16 @@
     width: 100%;
 }
 
+.podcasts__hidden-320 {
+    display: flex;
+    visibility: visible;
+}
+
+.podcasts__hidden {
+    display: none;
+    visibility: hidden;
+}
+
 .podcasts__img {
     flex: 0 0 112px;
     object-fit: cover;

@@ -43,48 +43,6 @@
     fill: var(--color-primary_shade);
 }
 
-.footer__middle {
-    position: absolute;
-    top: -36px;
-    left: 22%;
-    left: calc(50% - 305px);
-}
-
-.footer__title {
-    color: var(--color-white);
-    margin-bottom: 4px;
-}
-
-.footer__subtitle {
-    font-weight: 400;
-    font-size: var(--font-size-middle);
-    line-height: calc(24/16);
-    color: var(--color-text_gray);
-    margin-bottom: 12px;
-}
-
-.footer__form {
-    font-weight: 400;
-    font-size: var(--font-size-middle);
-    line-height: 1em;
-    color: var(--color-white);
-}
-
-.footer__input_email {
-    max-width: 350px;
-    width: 100%;
-    min-height: 40px;
-    padding-left: 18px;
-    margin-bottom: 28px;
-    border-radius: 40px;
-    border-color: var(--color-white);
-}
-
-.footer__error {
-    top: 2px;
-    left: 18px;
-}
-
 .footer__list {
     flex-flow: column wrap;
     gap: 20px;

@@ -116,10 +116,6 @@
         .about__btn {
             margin-bottom: 26px;
         }
-        /* -------------1024-----footer---------------------- */
-        .footer__middle {
-            visibility: hidden;
-        }
     }
     
     @media(max-width: 1124px) {
@@ -923,6 +919,8 @@
             --font-size-h2: 24px;
             /* --width-card-about: 397px; */
             --width-card-about: 113px;
+            --number-card-podcasts: 4;
+            /* видимые */
         }
         /* -------------320-----podcasts---------------------- */
         .podcasts__item {
@@ -980,6 +978,10 @@
             padding-bottom: 5px;
         }
         .podcasts__hidden {
+            display: flex;
+            visibility: visible;
+        }
+        .podcasts__hidden-320 {
             display: none;
             visibility: hidden;
         }

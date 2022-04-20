@@ -61,36 +61,23 @@ window.addEventListener('DOMContentLoaded', () => {
     //about__form
     document.querySelector('.about__form').addEventListener('submit', function(e) {
 
-            e.preventDefault();
+        e.preventDefault();
 
-            let formInputs = document.querySelectorAll('.about__input');
-            let inputName = document.querySelector('.about__input_name');
-            let inputEmail = document.querySelector('.about__input_email');
-            let inputCheckbox = document.querySelector('.about__checkbox');
-            let error = 0;
+        let formInputs = document.querySelectorAll('.about__input');
+        let inputName = document.querySelector('.about__input_name');
+        let inputEmail = document.querySelector('.about__input_email');
+        let inputCheckbox = document.querySelector('.about__checkbox');
+        let error = 0;
 
-            error = validateInputs(formInputs, error);
-            error = validateInput(inputName, validateName(inputName.value), error);
-            error = validateInput(inputEmail, validateEmail(inputEmail.value), error);
-            error = validateInput(inputCheckbox, inputCheckbox.checked, error);
+        error = validateInputs(formInputs, error);
+        error = validateInput(inputName, validateName(inputName.value), error);
+        error = validateInput(inputEmail, validateEmail(inputEmail.value), error);
+        error = validateInput(inputCheckbox, inputCheckbox.checked, error);
 
-            if (error === 0) this.submit();
-        })
-        //footer__form
-    document.querySelector('.footer__form').addEventListener('submit', function(e) {
+        if (error === 0) this.submit();
+    })
 
-            e.preventDefault();
-
-            let formInputs = document.querySelectorAll('.footer__input');
-            let inputEmail = document.querySelector('.footer__input_email');
-            let error = 0;
-
-            error = validateInputs(formInputs, error);
-            error = validateInput(inputEmail, validateEmail(inputEmail.value), error);
-
-            if (error === 0) this.submit();
-        })
-        //footer__form
+    //modal-entry__form
     document.querySelector('.modal-entry__form').addEventListener('submit', function(e) {
 
         e.preventDefault();
