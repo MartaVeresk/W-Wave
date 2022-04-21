@@ -220,15 +220,15 @@
 }
 
 .playlists__icon_ru {
-    background-image: url(../img/country-russia.svg);
+    background-image: url(./img/country-russia.svg);
 }
 
 .playlists__icon_uk {
-    background-image: url(../img/country-uk.svg);
+    background-image: url(./img/country-uk.svg);
 }
 
 .playlists__icon_usa {
-    background-image: url(../img/country-usa.svg);
+    background-image: url(./img/country-usa.svg);
 }
 
 .playlists__btn {
