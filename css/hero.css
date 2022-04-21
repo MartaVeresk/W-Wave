@@ -9,7 +9,7 @@
     position: absolute;
     top: 0px;
     right: 100px;
-    background: url(..../img/microphone.png) no-repeat right center;
+    background: url(...img/microphone.png) no-repeat right center;
     height: 100%;
     width: 100%;
     background-size: 26.5%;

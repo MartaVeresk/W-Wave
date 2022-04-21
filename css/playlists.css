@@ -87,7 +87,7 @@
     width: 30px;
     height: 30px;
     background-color: #fff;
-    background-image: url(../img/playlist_actives.svg);
+    background-image: url(.img/playlist_actives.svg);
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0;
@@ -146,11 +146,11 @@
 }
 
 .playlists__prev {
-    background-image: url(../img/playlists__prev.svg);
+    background-image: url(.img/playlists__prev.svg);
 }
 
 .playlists__next {
-    background-image: url(../img/playlists__next.svg);
+    background-image: url(.img/playlists__next.svg);
 }
 
 .playlists__prev,

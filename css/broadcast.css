@@ -165,7 +165,7 @@
     top: 350px;
     left: 0;
     padding-top: 112px;
-    background-image: url('../img/broadcast_mic.png');
+    background-image: url('.img/broadcast_mic.png');
     background-position: top left;
     background-repeat: no-repeat;
     background-size: 65px 89px;
@@ -357,7 +357,7 @@
     /* меняем иконки */
     top: 50%;
     border-color: transparent;
-    background-image: url(../img/icon_closed.svg);
+    background-image: url(.img/icon_closed.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
@@ -369,7 +369,7 @@
     z-index: 6;
     top: 60%;
     border-color: transparent;
-    background-image: url(../img/icon_opened.svg);
+    background-image: url(.img/icon_opened.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
