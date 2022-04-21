@@ -149,7 +149,7 @@
 .advan__text1 {
     padding-top: 30px;
     margin-bottom: 12px;
-    background-image: url(.img/adv_decor.svg);
+    background-image: url(./img/adv_decor.svg);
     background-repeat: no-repeat;
     /* background-size: contain; */
     background-size: auto;
