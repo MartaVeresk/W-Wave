@@ -125,6 +125,10 @@
     opacity: 0;
 }
 
+.podcasts__img {
+    background-color: var(--color-bg_gray);
+}
+
 .podcasts__img,
 .podcasts__svg {
     transition: opacity .4s ease-in-out;
