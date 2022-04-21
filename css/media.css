@@ -216,7 +216,7 @@
             position: absolute;
             content: '';
             width: 112px;
-            background-image: url(.img/header_spiral_768.png);
+            background-image: url(../img/header_spiral_768.png);
             background-repeat: no-repeat;
             background-size: contain;
         }
@@ -402,7 +402,7 @@
         .about__block::before {
             display: block;
             left: -21%;
-            background-image: url(.img/about_Spiral_768.svg);
+            background-image: url(../img/about_Spiral_768.svg);
             background-position: -21% bottom;
             overflow: hidden;
         }

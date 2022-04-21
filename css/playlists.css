@@ -87,7 +87,7 @@
     width: 30px;
     height: 30px;
     background-color: #fff;
-    background-image: url(https://martaveresk.github.io/W-Wave/img/playlist_actives.svg);
+    background-image: url(../img/playlist_actives.svg);
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0;
@@ -146,11 +146,11 @@
 }
 
 .playlists__prev {
-    background-image: url(https://martaveresk.github.io/W-Wave/img/playlists__prev.svg);
+    background-image: url(../img/playlists__prev.svg);
 }
 
 .playlists__next {
-    background-image: url(https://martaveresk.github.io/W-Wave/img/playlists__next.svg);
+    background-image: url(../img/playlists__next.svg);
 }
 
 .playlists__prev,
@@ -220,15 +220,15 @@
 }
 
 .playlists__icon_ru {
-    background-image: url(https://martaveresk.github.io/W-Wave/img/country-russia.svg);
+    background-image: url(../img/country-russia.svg);
 }
 
 .playlists__icon_uk {
-    background-image: url(https://martaveresk.github.io/W-Wave/img/country-uk.svg);
+    background-image: url(../img/country-uk.svg);
 }
 
 .playlists__icon_usa {
-    background-image: url(https://martaveresk.github.io/W-Wave/img/country-usa.svg);
+    background-image: url(../img/country-usa.svg);
 }
 
 .playlists__btn {
