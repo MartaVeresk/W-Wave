@@ -18,7 +18,7 @@
     <!-- accordeon -->
     <script src="./libs/accordion.js" defer></script>
     <!-- scroll -->
-    <script src="./libs/simplebar.min.js"></script>
+    <script src="./libs/simplebar.min.js" defer></script>
     <!-- swiper -->
     <script src="./libs/swiper-bundle.min.js" defer></script>
 
@@ -136,35 +136,36 @@
 
     </header>
     <!-- ________________________________________hero_____________________________________________ -->
-    <section class="hero" id="hero">
-        <div class="container container_padding hero__container">
-            <h1 class="hero__title">Радио <i>W-Wawe</i></h1>
-            <p class="hero__descr">Привет, на&nbsp;связи W-Wawe! Раньше мы&nbsp;были <span class="hero__mark">изданием</span>, а&nbsp;теперь пробуем себя в&nbsp;разоворном жанре. Говорим о&nbsp;музыке, политике, истории, науке и&nbsp;культуре. Здесь, помимо прямого эфира&nbsp;&mdash;
-                архив передач и&nbsp;многое другое :)
-            </p>
-            <button class="btn-reset btn-theme2 hero__btn">Слушать эфир</button>
-        </div>
-    </section>
-    <!-- ________________________________________podcasts_____________________________________________ -->
-    <section class="podcasts" id="podcasts">
-        <div class="container container_padding podcasts__container">
-            <h2 class="title-h2 podcasts__title">Подкасты</h2>
-            <ul class="podcasts__list flex">
-                <!-- 1 -->
-                <li class="list podcasts__item flex">
-                    <picture class="podcasts__img flex">
-                        <source srcset="https://martaveresk.github.io/W-Wave/img/podcast_1_320.jpg" media="(max-width: 500px)">
-                        <img src="https://martaveresk.github.io/W-Wave/img/podcast_1.jpg" alt="Фото города">
-                    </picture>
-                    <span class="podcasts__data">14 июня</span>
-                    <div class="podcasts__card">
-                        <div class="podcasts__descr flex">
-                            <div class="podcasts__text flex">
-                                <p class="podcasts__time">15:43</p>
-                                <h3 class="title-h3 podcasts__h3">Европа. XIX век</h3>
-                                <p class="podcasts__name">Дмитрий Гутенберг</p>
-                            </div>
-                            <button class="btn-reset podcasts__play" aria-label="Подкаст Европа. XIX век">
+    <main>
+        <section class="hero" id="hero">
+            <div class="container container_padding hero__container">
+                <h1 class="hero__title">Радио <i>W-Wawe</i></h1>
+                <p class="hero__descr">Привет, на&nbsp;связи W-Wawe! Раньше мы&nbsp;были <span class="hero__mark">изданием</span>, а&nbsp;теперь пробуем себя в&nbsp;разоворном жанре. Говорим о&nbsp;музыке, политике, истории, науке и&nbsp;культуре. Здесь, помимо прямого эфира&nbsp;&mdash;
+                    архив передач и&nbsp;многое другое :)
+                </p>
+                <button class="btn-reset btn-theme2 hero__btn">Слушать эфир</button>
+            </div>
+        </section>
+        <!-- ________________________________________podcasts_____________________________________________ -->
+        <section class="podcasts" id="podcasts">
+            <div class="container container_padding podcasts__container">
+                <h2 class="title-h2 podcasts__title">Подкасты</h2>
+                <ul class="podcasts__list flex">
+                    <!-- 1 -->
+                    <li class="list podcasts__item flex">
+                        <picture class="podcasts__img flex">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/podcast_1_320.jpg" media="(max-width: 500px)">
+                            <img src="https://martaveresk.github.io/W-Wave/img/podcast_1.jpg" alt="Фото города">
+                        </picture>
+                        <span class="podcasts__data">14 июня</span>
+                        <div class="podcasts__card">
+                            <div class="podcasts__descr flex">
+                                <div class="podcasts__text flex">
+                                    <p class="podcasts__time">15:43</p>
+                                    <h3 class="title-h3 podcasts__h3">Европа. XIX век</h3>
+                                    <p class="podcasts__name">Дмитрий Гутенберг</p>
+                                </div>
+                                <button class="btn-reset podcasts__play" aria-label="Подкаст Европа. XIX век">
                                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle class="podcasts__svg-round" cx="24" cy="24" r="20" fill></circle>
                                     <circle class="podcasts__svg-border" cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"></circle>
@@ -173,45 +174,45 @@
                                     <rect class="podcasts__svg podcasts__svg-line podcasts__svg-hidden" x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4"></rect>
                                 </svg>
                             </button>
-                            <div class="podcasts__img-gray"></div>
-                        </div>
-                        <div class="podcasts__computed flex">
-                            <button class="btn-reset podcasts__icon podcasts__icon1 flex" aria-label="Прослушано">
+                                <div class="podcasts__img-gray"></div>
+                            </div>
+                            <div class="podcasts__computed flex">
+                                <button class="btn-reset podcasts__icon podcasts__icon1 flex" aria-label="Прослушано">
                                     <svg class="icon">
                                         <use xlink:href="#play"></use>
                                     </svg>
                                     <span class="podcasts__counts">258</span>
                             </button>
-                            <button class="btn-reset podcasts__icon podcasts__icon2 flex" aria-label="Нравиться">
+                                <button class="btn-reset podcasts__icon podcasts__icon2 flex" aria-label="Нравиться">
                                     <svg class="icon">
                                         <use xlink:href="#heart"></use>
                                     </svg>
                                     <span class="podcasts__counts">104</span>
                             </button>
-                            <button class="btn-reset podcasts__icon podcasts__icon3 flex" aria-label="Поделиться">
+                                <button class="btn-reset podcasts__icon podcasts__icon3 flex" aria-label="Поделиться">
                                     <svg class="icon">
                                         <use xlink:href="#share"></use>
                                     </svg>
                                     <span class="podcasts__counts">68</span>
                             </button>
-                        </div>
-                    </div>
-                </li>
-                <!-- 2 -->
-                <li class="list podcasts__item flex">
-                    <picture class="podcasts__img flex">
-                        <source srcset="https://martaveresk.github.io/W-Wave/img/podcast_2_320.jpg" media="(max-width: 500px)">
-                        <img src="https://martaveresk.github.io/W-Wave/img/podcast_2.jpg" alt="Фото скрипача">
-                    </picture>
-                    <span class="podcasts__data">11 июня</span>
-                    <div class="podcasts__card">
-                        <div class="podcasts__descr flex">
-                            <div class="podcasts__text flex">
-                                <p class="podcasts__time">5:32</p>
-                                <h3 class="title-h3 podcasts__h3">О музыке</h3>
-                                <p class="podcasts__name">Дмитрий Гутенберг</p>
                             </div>
-                            <button class="btn-reset podcasts__play" aria-label="Подкаст О музыке">
+                        </div>
+                    </li>
+                    <!-- 2 -->
+                    <li class="list podcasts__item flex">
+                        <picture class="podcasts__img flex">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/podcast_2_320.jpg" media="(max-width: 500px)">
+                            <img src="https://martaveresk.github.io/W-Wave/img/podcast_2.jpg" alt="Фото скрипача">
+                        </picture>
+                        <span class="podcasts__data">11 июня</span>
+                        <div class="podcasts__card">
+                            <div class="podcasts__descr flex">
+                                <div class="podcasts__text flex">
+                                    <p class="podcasts__time">5:32</p>
+                                    <h3 class="title-h3 podcasts__h3">О музыке</h3>
+                                    <p class="podcasts__name">Дмитрий Гутенберг</p>
+                                </div>
+                                <button class="btn-reset podcasts__play" aria-label="Подкаст О музыке">
                                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle class="podcasts__svg-round" cx="24" cy="24" r="20" fill></circle>
                                     <circle class="podcasts__svg-border" cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"></circle>
@@ -220,45 +221,45 @@
                                     <rect class="podcasts__svg podcasts__svg-line podcasts__svg-hidden" x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4"></rect>
                                 </svg>
                             </button>
-                            <div class="podcasts__img-gray"></div>
-                        </div>
-                        <div class="podcasts__computed flex">
-                            <button class="btn-reset podcasts__icon podcasts__icon1 flex" aria-label="Прослушано">
+                                <div class="podcasts__img-gray"></div>
+                            </div>
+                            <div class="podcasts__computed flex">
+                                <button class="btn-reset podcasts__icon podcasts__icon1 flex" aria-label="Прослушано">
                                     <svg class="icon">
                                         <use xlink:href="#play"></use>
                                     </svg>
                                     <span class="podcasts__counts">207</span>
                                 </button>
-                            <button class="btn-reset podcasts__icon podcasts__icon2 flex" aria-label="Нравиться">
+                                <button class="btn-reset podcasts__icon podcasts__icon2 flex" aria-label="Нравиться">
                                     <svg class="icon">
                                         <use xlink:href="#heart"></use>
                                     </svg>  
                                     <span class="podcasts__counts">34</span>
                                 </button>
-                            <button class="btn-reset podcasts__icon podcasts__icon3 flex" aria-label="Поделиться">
+                                <button class="btn-reset podcasts__icon podcasts__icon3 flex" aria-label="Поделиться">
                                     <svg class="icon">
                                         <use xlink:href="#share"></use>
                                     </svg>   
                                     <span class="podcasts__counts">18</span>
                                 </button>
-                        </div>
-                    </div>
-                </li>
-                <!-- 3 -->
-                <li class="list podcasts__item flex">
-                    <picture class="podcasts__img flex">
-                        <source srcset="https://martaveresk.github.io/W-Wave/img/podcast_3_320.jpg" media="(max-width: 500px)">
-                        <img src="https://martaveresk.github.io/W-Wave/img/podcast_3.jpg" alt="Фото толпы">
-                    </picture>
-                    <span class="podcasts__data">8 июня</span>
-                    <div class="podcasts__card">
-                        <div class="podcasts__descr flex">
-                            <div class="podcasts__text flex">
-                                <p class="podcasts__time">8:54</p>
-                                <h3 class="title-h3 podcasts__h3">Люди сегодня</h3>
-                                <p class="podcasts__name">Анна Васильева</p>
                             </div>
-                            <button class="btn-reset podcasts__play" aria-label="Подкаст Люди сегодня">
+                        </div>
+                    </li>
+                    <!-- 3 -->
+                    <li class="list podcasts__item flex">
+                        <picture class="podcasts__img flex">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/podcast_3_320.jpg" media="(max-width: 500px)">
+                            <img src="https://martaveresk.github.io/W-Wave/img/podcast_3.jpg" alt="Фото толпы">
+                        </picture>
+                        <span class="podcasts__data">8 июня</span>
+                        <div class="podcasts__card">
+                            <div class="podcasts__descr flex">
+                                <div class="podcasts__text flex">
+                                    <p class="podcasts__time">8:54</p>
+                                    <h3 class="title-h3 podcasts__h3">Люди сегодня</h3>
+                                    <p class="podcasts__name">Анна Васильева</p>
+                                </div>
+                                <button class="btn-reset podcasts__play" aria-label="Подкаст Люди сегодня">
                                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle class="podcasts__svg-round" cx="24" cy="24" r="20" fill></circle>
                                     <circle class="podcasts__svg-border" cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"></circle>
@@ -267,45 +268,45 @@
                                     <rect class="podcasts__svg podcasts__svg-line podcasts__svg-hidden" x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4"></rect>
                                 </svg>
                             </button>
-                            <div class="podcasts__img-gray"></div>
-                        </div>
-                        <div class="podcasts__computed flex">
-                            <button class="btn-reset podcasts__icon podcasts__icon1 flex" aria-label="Прослушано">
+                                <div class="podcasts__img-gray"></div>
+                            </div>
+                            <div class="podcasts__computed flex">
+                                <button class="btn-reset podcasts__icon podcasts__icon1 flex" aria-label="Прослушано">
                                     <svg class="icon">
                                         <use xlink:href="#play"></use>
                                     </svg>    
                                     <span class="podcasts__counts">104</span>
                                 </button>
-                            <button class="btn-reset podcasts__icon podcasts__icon2 flex" aria-label="Нравиться">
+                                <button class="btn-reset podcasts__icon podcasts__icon2 flex" aria-label="Нравиться">
                                     <svg class="icon">
                                         <use xlink:href="#heart"></use>
                                     </svg>
                                     <span class="podcasts__counts">54</span>
                                 </button>
-                            <button class="btn-reset podcasts__icon podcasts__icon3 flex" aria-label="Поделиться">
+                                <button class="btn-reset podcasts__icon podcasts__icon3 flex" aria-label="Поделиться">
                                     <svg class="icon">
                                         <use xlink:href="#share"></use>
                                     </svg>    
                                     <span class="podcasts__counts">42</span>
                                  </button>
-                        </div>
-                    </div>
-                </li>
-                <!-- 4 -->
-                <li class="list podcasts__item flex">
-                    <picture class="podcasts__img flex">
-                        <source srcset="https://martaveresk.github.io/W-Wave/img/podcast_4_320.jpg" media="(max-width: 500px)">
-                        <img src="https://martaveresk.github.io/W-Wave/img/podcast_4.jpg" alt="Фото африканской женщины">
-                    </picture>
-                    <span class="podcasts__data">5 июня</span>
-                    <div class="podcasts__card">
-                        <div class="podcasts__descr flex">
-                            <div class="podcasts__text flex">
-                                <p class="podcasts__time">9:04</p>
-                                <h3 class="title-h3 podcasts__h3">Хэллоу, Африка!</h3>
-                                <p class="podcasts__name">Пётр Дмитриевский</p>
                             </div>
-                            <button class="btn-reset podcasts__play" aria-label="Подкаст Хэллоу, Африка!">
+                        </div>
+                    </li>
+                    <!-- 4 -->
+                    <li class="list podcasts__item flex">
+                        <picture class="podcasts__img flex">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/podcast_4_320.jpg" media="(max-width: 500px)">
+                            <img src="https://martaveresk.github.io/W-Wave/img/podcast_4.jpg" alt="Фото африканской женщины">
+                        </picture>
+                        <span class="podcasts__data">5 июня</span>
+                        <div class="podcasts__card">
+                            <div class="podcasts__descr flex">
+                                <div class="podcasts__text flex">
+                                    <p class="podcasts__time">9:04</p>
+                                    <h3 class="title-h3 podcasts__h3">Хэллоу, Африка!</h3>
+                                    <p class="podcasts__name">Пётр Дмитриевский</p>
+                                </div>
+                                <button class="btn-reset podcasts__play" aria-label="Подкаст Хэллоу, Африка!">
                                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle class="podcasts__svg-round" cx="24" cy="24" r="20" fill></circle>
                                     <circle class="podcasts__svg-border" cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"></circle>
@@ -314,44 +315,44 @@
                                     <rect class="podcasts__svg podcasts__svg-line podcasts__svg-hidden" x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4"></rect>
                                 </svg>
                             </button>
-                            <div class="podcasts__img-gray"></div>
-                        </div>
-                        <div class="podcasts__computed flex">
-                            <button class="btn-reset podcasts__icon podcasts__icon1 flex" aria-label="Прослушано">
+                                <div class="podcasts__img-gray"></div>
+                            </div>
+                            <div class="podcasts__computed flex">
+                                <button class="btn-reset podcasts__icon podcasts__icon1 flex" aria-label="Прослушано">
                                     <svg class="icon">
                                         <use xlink:href="#play"></use>
                                     </svg> 
                                     <span class="podcasts__counts">27</span>
                                 </button>
-                            <button class="btn-reset podcasts__icon podcasts__icon2 flex" aria-label="Нравиться">
+                                <button class="btn-reset podcasts__icon podcasts__icon2 flex" aria-label="Нравиться">
                                     <svg class="icon">
                                         <use xlink:href="#heart"></use>
                                     </svg>
                                    <span class="podcasts__counts">44</span>
                                 </button>
-                            <button class="btn-reset podcasts__icon podcasts__icon3 flex" aria-label="Поделиться">
+                                <button class="btn-reset podcasts__icon podcasts__icon3 flex" aria-label="Поделиться">
                                     <svg class="icon">
                                         <use xlink:href="#share"></use>
                                     </svg>
                                     <span class="podcasts__counts">68</span>
                                 </button>
-                        </div>
-                    </div>
-                </li>
-                <!-- 5 -->
-                <li class="list podcasts__item flex podcasts__hidden-320">
-                    <picture class="podcasts__img flex">
-                        <img src="https://martaveresk.github.io/W-Wave/img/podcast_5.jpg" alt="Фото скульптуры">
-                    </picture>
-                    <span class="podcasts__data">2 июня</span>
-                    <div class="podcasts__card">
-                        <div class="podcasts__descr flex">
-                            <div class="podcasts__text flex">
-                                <p class="podcasts__time">7:03</p>
-                                <h3 class="title-h3 podcasts__h3">Обо всём</h3>
-                                <p class="podcasts__name">Пётр Дмитриевский</p>
                             </div>
-                            <button class="btn-reset podcasts__play" aria-label="Подкаст Обо всём">
+                        </div>
+                    </li>
+                    <!-- 5 -->
+                    <li class="list podcasts__item flex podcasts__hidden-320">
+                        <picture class="podcasts__img flex">
+                            <img src="https://martaveresk.github.io/W-Wave/img/podcast_5.jpg" alt="Фото скульптуры">
+                        </picture>
+                        <span class="podcasts__data">2 июня</span>
+                        <div class="podcasts__card">
+                            <div class="podcasts__descr flex">
+                                <div class="podcasts__text flex">
+                                    <p class="podcasts__time">7:03</p>
+                                    <h3 class="title-h3 podcasts__h3">Обо всём</h3>
+                                    <p class="podcasts__name">Пётр Дмитриевский</p>
+                                </div>
+                                <button class="btn-reset podcasts__play" aria-label="Подкаст Обо всём">
                                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle class="podcasts__svg-round" cx="24" cy="24" r="20" fill></circle>
                                     <circle class="podcasts__svg-border" cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"></circle>
@@ -360,44 +361,44 @@
                                     <rect class="podcasts__svg podcasts__svg-line podcasts__svg-hidden" x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4"></rect>
                                 </svg>
                             </button>
-                            <div class="podcasts__img-gray"></div>
-                        </div>
-                        <div class="podcasts__computed flex">
-                            <button class="btn-reset podcasts__icon podcasts__icon1 flex" aria-label="Прослушано">
+                                <div class="podcasts__img-gray"></div>
+                            </div>
+                            <div class="podcasts__computed flex">
+                                <button class="btn-reset podcasts__icon podcasts__icon1 flex" aria-label="Прослушано">
                                     <svg class="icon">
                                         <use xlink:href="#play"></use>
                                     </svg>  
                                     <span class="podcasts__counts">64</span>
                                 </button>
-                            <button class="btn-reset podcasts__icon podcasts__icon2 flex" aria-label="Нравиться">
+                                <button class="btn-reset podcasts__icon podcasts__icon2 flex" aria-label="Нравиться">
                                     <svg class="icon">
                                          <use xlink:href="#heart"></use>
                                     </svg>  
                                     <span class="podcasts__counts">30</span>
                                 </button>
-                            <button class="btn-reset podcasts__icon podcasts__icon3 flex" aria-label="Поделиться">
+                                <button class="btn-reset podcasts__icon podcasts__icon3 flex" aria-label="Поделиться">
                                     <svg class="icon">
                                         <use xlink:href="#share"></use>
                                     </svg>   
                                     <span class="podcasts__counts">8</span>
                                 </button>
-                        </div>
-                    </div>
-                </li>
-                <!-- 6 -->
-                <li class="list podcasts__item flex podcasts__hidden-320">
-                    <picture class="podcasts__img flex">
-                        <img src="https://martaveresk.github.io/W-Wave/img/podcast_6.jpg" alt="Фото цветового круга">
-                    </picture>
-                    <span class="podcasts__data">28 мая</span>
-                    <div class="podcasts__card">
-                        <div class="podcasts__descr flex">
-                            <div class="podcasts__text flex">
-                                <p class="podcasts__time">9:15</p>
-                                <h3 class="title-h3 podcasts__h3">Физика цвета</h3>
-                                <p class="podcasts__name">Татьяна Флеганова</p>
                             </div>
-                            <button class="btn-reset podcasts__play" aria-label="Подкаст Физика цвета">
+                        </div>
+                    </li>
+                    <!-- 6 -->
+                    <li class="list podcasts__item flex podcasts__hidden-320">
+                        <picture class="podcasts__img flex">
+                            <img src="https://martaveresk.github.io/W-Wave/img/podcast_6.jpg" alt="Фото цветового круга">
+                        </picture>
+                        <span class="podcasts__data">28 мая</span>
+                        <div class="podcasts__card">
+                            <div class="podcasts__descr flex">
+                                <div class="podcasts__text flex">
+                                    <p class="podcasts__time">9:15</p>
+                                    <h3 class="title-h3 podcasts__h3">Физика цвета</h3>
+                                    <p class="podcasts__name">Татьяна Флеганова</p>
+                                </div>
+                                <button class="btn-reset podcasts__play" aria-label="Подкаст Физика цвета">
                                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle class="podcasts__svg-round" cx="24" cy="24" r="20" fill></circle>
                                     <circle class="podcasts__svg-border" cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"></circle>
@@ -406,44 +407,44 @@
                                     <rect class="podcasts__svg podcasts__svg-line podcasts__svg-hidden" x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4"></rect>
                                 </svg>
                             </button>
-                            <div class="podcasts__img-gray"></div>
-                        </div>
-                        <div class="podcasts__computed flex">
-                            <button class="btn-reset podcasts__icon podcasts__icon1 flex" aria-label="Прослушано">
+                                <div class="podcasts__img-gray"></div>
+                            </div>
+                            <div class="podcasts__computed flex">
+                                <button class="btn-reset podcasts__icon podcasts__icon1 flex" aria-label="Прослушано">
                                     <svg class="icon">
                                         <use xlink:href="#play"></use>
                                     </svg>
                                     <span class="podcasts__counts">58</span>
                                 </button>
-                            <button class="btn-reset podcasts__icon podcasts__icon2 flex" aria-label="Нравиться">
+                                <button class="btn-reset podcasts__icon podcasts__icon2 flex" aria-label="Нравиться">
                                     <svg class="icon">
                                         <use xlink:href="#heart"></use>
                                     </svg> 
                                     <span class="podcasts__counts">29</span>
                                  </button>
-                            <button class="btn-reset podcasts__icon podcasts__icon3 flex" aria-label="Поделиться">
+                                <button class="btn-reset podcasts__icon podcasts__icon3 flex" aria-label="Поделиться">
                                     <svg class="icon">
                                         <use xlink:href="#share"></use>
                                     </svg>
                                     <span class="podcasts__counts">14</span>
                                 </button>
-                        </div>
-                    </div>
-                </li>
-                <!-- 7 -->
-                <li class="list podcasts__item flex podcasts__hidden-320">
-                    <picture class="podcasts__img flex">
-                        <img src="https://martaveresk.github.io/W-Wave/img/podcast_7.jpg" alt="Фото звуковой волны">
-                    </picture>
-                    <span class="podcasts__data">22 мая</span>
-                    <div class="podcasts__card">
-                        <div class="podcasts__descr flex">
-                            <div class="podcasts__text flex">
-                                <p class="podcasts__time">16:04</p>
-                                <h3 class="title-h3 podcasts__h3">Источник звука</h3>
-                                <p class="podcasts__name">Пётр Дмитриевский</p>
                             </div>
-                            <button class="btn-reset podcasts__play" aria-label="Подкаст Источник звука">
+                        </div>
+                    </li>
+                    <!-- 7 -->
+                    <li class="list podcasts__item flex podcasts__hidden-320">
+                        <picture class="podcasts__img flex">
+                            <img src="https://martaveresk.github.io/W-Wave/img/podcast_7.jpg" alt="Фото звуковой волны">
+                        </picture>
+                        <span class="podcasts__data">22 мая</span>
+                        <div class="podcasts__card">
+                            <div class="podcasts__descr flex">
+                                <div class="podcasts__text flex">
+                                    <p class="podcasts__time">16:04</p>
+                                    <h3 class="title-h3 podcasts__h3">Источник звука</h3>
+                                    <p class="podcasts__name">Пётр Дмитриевский</p>
+                                </div>
+                                <button class="btn-reset podcasts__play" aria-label="Подкаст Источник звука">
                                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle class="podcasts__svg-round" cx="24" cy="24" r="20" fill></circle>
                                     <circle class="podcasts__svg-border" cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"></circle>
@@ -452,44 +453,44 @@
                                     <rect class="podcasts__svg podcasts__svg-line podcasts__svg-hidden" x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4"></rect>
                                 </svg>
                             </button>
-                            <div class="podcasts__img-gray"></div>
-                        </div>
-                        <div class="podcasts__computed flex">
-                            <button class="btn-reset podcasts__icon podcasts__icon1 flex" aria-label="Прослушано">
+                                <div class="podcasts__img-gray"></div>
+                            </div>
+                            <div class="podcasts__computed flex">
+                                <button class="btn-reset podcasts__icon podcasts__icon1 flex" aria-label="Прослушано">
                                     <svg class="icon">
                                         <use xlink:href="#play"></use>
                                     </svg>
                                     <span class="podcasts__counts">55</span>
                                 </button>
-                            <button class="btn-reset podcasts__icon podcasts__icon2 flex" aria-label="Нравиться">
+                                <button class="btn-reset podcasts__icon podcasts__icon2 flex" aria-label="Нравиться">
                                     <svg class="icon">
                                         <use xlink:href="#heart"></use>
                                     </svg>   
                                     <span class="podcasts__counts">20</span>
                                 </button>
-                            <button class="btn-reset podcasts__icon podcasts__icon3 flex" aria-label="Поделиться">
+                                <button class="btn-reset podcasts__icon podcasts__icon3 flex" aria-label="Поделиться">
                                     <svg class="icon">
                                         <use xlink:href="#share"></use>
                                     </svg>
                                     <span class="podcasts__counts">12</span>
                                </button>
-                        </div>
-                    </div>
-                </li>
-                <!-- 8 -->
-                <li class="list podcasts__item flex podcasts__hidden-320">
-                    <picture class="podcasts__img flex">
-                        <img src="https://martaveresk.github.io/W-Wave/img/podcast_8.jpg" alt="Фото обедающих людей">
-                    </picture>
-                    <span class="podcasts__data">18 мая</span>
-                    <div class="podcasts__card">
-                        <div class="podcasts__descr flex">
-                            <div class="podcasts__text flex">
-                                <p class="podcasts__time">6:55</p>
-                                <h3 class="title-h3 podcasts__h3">Правила этикета</h3>
-                                <p class="podcasts__name">Татьяна Флеганова</p>
                             </div>
-                            <button class="btn-reset podcasts__play" aria-label="Подкаст Правила этикета">
+                        </div>
+                    </li>
+                    <!-- 8 -->
+                    <li class="list podcasts__item flex podcasts__hidden-320">
+                        <picture class="podcasts__img flex">
+                            <img src="https://martaveresk.github.io/W-Wave/img/podcast_8.jpg" alt="Фото обедающих людей">
+                        </picture>
+                        <span class="podcasts__data">18 мая</span>
+                        <div class="podcasts__card">
+                            <div class="podcasts__descr flex">
+                                <div class="podcasts__text flex">
+                                    <p class="podcasts__time">6:55</p>
+                                    <h3 class="title-h3 podcasts__h3">Правила этикета</h3>
+                                    <p class="podcasts__name">Татьяна Флеганова</p>
+                                </div>
+                                <button class="btn-reset podcasts__play" aria-label="Подкаст Правила этикета">
                                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle class="podcasts__svg-round" cx="24" cy="24" r="20" fill></circle>
                                     <circle class="podcasts__svg-border" cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"></circle>
@@ -498,45 +499,45 @@
                                     <rect class="podcasts__svg podcasts__svg-line podcasts__svg-hidden" x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4"></rect>
                                 </svg>
                             </button>
-                            <div class="podcasts__img-gray"></div>
-                        </div>
-                        <div class="podcasts__computed flex">
-                            <button class="btn-reset podcasts__icon podcasts__icon1 flex" aria-label="Прослушано">
+                                <div class="podcasts__img-gray"></div>
+                            </div>
+                            <div class="podcasts__computed flex">
+                                <button class="btn-reset podcasts__icon podcasts__icon1 flex" aria-label="Прослушано">
                                     <svg class="icon">
                                         <use xlink:href="#play"></use>
                                     </svg>  
                                     <span class="podcasts__counts">24</span>
                                 </button>
-                            <button class="btn-reset podcasts__icon podcasts__icon2 flex" aria-label="Нравиться">
+                                <button class="btn-reset podcasts__icon podcasts__icon2 flex" aria-label="Нравиться">
                                     <svg class="icon">
                                         <use xlink:href="#heart"></use>
                                     </svg>
                                     <span class="podcasts__counts">54</span>
                                 </button>
-                            <button class="btn-reset podcasts__icon podcasts__icon3 flex" aria-label="Поделиться">
+                                <button class="btn-reset podcasts__icon podcasts__icon3 flex" aria-label="Поделиться">
                                     <svg class="icon">
                                         <use xlink:href="#share"></use>
                                     </svg>
                                     <span class="podcasts__counts">42</span>
                                 </button>
-                        </div>
-                    </div>
-                </li>
-                <!-- 4 -->
-                <li class="list podcasts__item flex podcasts__hidden podcasts__hidden-320">
-                    <picture class="podcasts__img flex">
-                        <source srcset="https://martaveresk.github.io/W-Wave/img/podcast_4_320.jpg" media="(max-width: 500px)">
-                        <img src="https://martaveresk.github.io/W-Wave/img/podcast_4.jpg" alt="Фото африканской женщины">
-                    </picture>
-                    <span class="podcasts__data">5 июня</span>
-                    <div class="podcasts__card">
-                        <div class="podcasts__descr flex">
-                            <div class="podcasts__text flex">
-                                <p class="podcasts__time">9:04</p>
-                                <h3 class="title-h3 podcasts__h3">Хэллоу, Африка!</h3>
-                                <p class="podcasts__name">Пётр Дмитриевский</p>
                             </div>
-                            <button class="btn-reset podcasts__play" aria-label="Подкаст Хэллоу, Африка!">
+                        </div>
+                    </li>
+                    <!-- 4 -->
+                    <li class="list podcasts__item flex podcasts__hidden podcasts__hidden-320">
+                        <picture class="podcasts__img flex">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/podcast_4_320.jpg" media="(max-width: 500px)">
+                            <img src="https://martaveresk.github.io/W-Wave/img/podcast_4.jpg" alt="Фото африканской женщины">
+                        </picture>
+                        <span class="podcasts__data">5 июня</span>
+                        <div class="podcasts__card">
+                            <div class="podcasts__descr flex">
+                                <div class="podcasts__text flex">
+                                    <p class="podcasts__time">9:04</p>
+                                    <h3 class="title-h3 podcasts__h3">Хэллоу, Африка!</h3>
+                                    <p class="podcasts__name">Пётр Дмитриевский</p>
+                                </div>
+                                <button class="btn-reset podcasts__play" aria-label="Подкаст Хэллоу, Африка!">
                                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle class="podcasts__svg-round" cx="24" cy="24" r="20" fill></circle>
                                     <circle class="podcasts__svg-border" cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"></circle>
@@ -545,45 +546,45 @@
                                     <rect class="podcasts__svg podcasts__svg-line podcasts__svg-hidden" x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4"></rect>
                                 </svg>
                             </button>
-                            <div class="podcasts__img-gray"></div>
-                        </div>
-                        <div class="podcasts__computed flex">
-                            <button class="btn-reset podcasts__icon podcasts__icon1 flex" aria-label="Прослушано">
+                                <div class="podcasts__img-gray"></div>
+                            </div>
+                            <div class="podcasts__computed flex">
+                                <button class="btn-reset podcasts__icon podcasts__icon1 flex" aria-label="Прослушано">
                                     <svg class="icon">
                                         <use xlink:href="#play"></use>
                                     </svg> 
                                     <span class="podcasts__counts">27</span>
                                 </button>
-                            <button class="btn-reset podcasts__icon podcasts__icon2 flex" aria-label="Нравиться">
+                                <button class="btn-reset podcasts__icon podcasts__icon2 flex" aria-label="Нравиться">
                                     <svg class="icon">
                                         <use xlink:href="#heart"></use>
                                     </svg>
                                    <span class="podcasts__counts">44</span>
                                 </button>
-                            <button class="btn-reset podcasts__icon podcasts__icon3 flex" aria-label="Поделиться">
+                                <button class="btn-reset podcasts__icon podcasts__icon3 flex" aria-label="Поделиться">
                                     <svg class="icon">
                                         <use xlink:href="#share"></use>
                                     </svg>
                                     <span class="podcasts__counts">68</span>
                                 </button>
-                        </div>
-                    </div>
-                </li>
-                <!-- 4 -->
-                <li class="list podcasts__item flex podcasts__hidden podcasts__hidden-320">
-                    <picture class="podcasts__img flex">
-                        <source srcset="https://martaveresk.github.io/W-Wave/img/podcast_4_320.jpg" media="(max-width: 500px)">
-                        <img src="https://martaveresk.github.io/W-Wave/img/podcast_4.jpg" alt="Фото африканской женщины">
-                    </picture>
-                    <span class="podcasts__data">5 июня</span>
-                    <div class="podcasts__card">
-                        <div class="podcasts__descr flex">
-                            <div class="podcasts__text flex">
-                                <p class="podcasts__time">9:04</p>
-                                <h3 class="title-h3 podcasts__h3">Хэллоу, Африка!</h3>
-                                <p class="podcasts__name">Пётр Дмитриевский</p>
                             </div>
-                            <button class="btn-reset podcasts__play" aria-label="Подкаст Хэллоу, Африка!">
+                        </div>
+                    </li>
+                    <!-- 4 -->
+                    <li class="list podcasts__item flex podcasts__hidden podcasts__hidden-320">
+                        <picture class="podcasts__img flex">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/podcast_4_320.jpg" media="(max-width: 500px)">
+                            <img src="https://martaveresk.github.io/W-Wave/img/podcast_4.jpg" alt="Фото африканской женщины">
+                        </picture>
+                        <span class="podcasts__data">5 июня</span>
+                        <div class="podcasts__card">
+                            <div class="podcasts__descr flex">
+                                <div class="podcasts__text flex">
+                                    <p class="podcasts__time">9:04</p>
+                                    <h3 class="title-h3 podcasts__h3">Хэллоу, Африка!</h3>
+                                    <p class="podcasts__name">Пётр Дмитриевский</p>
+                                </div>
+                                <button class="btn-reset podcasts__play" aria-label="Подкаст Хэллоу, Африка!">
                                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle class="podcasts__svg-round" cx="24" cy="24" r="20" fill></circle>
                                     <circle class="podcasts__svg-border" cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"></circle>
@@ -592,45 +593,45 @@
                                     <rect class="podcasts__svg podcasts__svg-line podcasts__svg-hidden" x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4"></rect>
                                 </svg>
                             </button>
-                            <div class="podcasts__img-gray"></div>
-                        </div>
-                        <div class="podcasts__computed flex">
-                            <button class="btn-reset podcasts__icon podcasts__icon1 flex" aria-label="Прослушано">
+                                <div class="podcasts__img-gray"></div>
+                            </div>
+                            <div class="podcasts__computed flex">
+                                <button class="btn-reset podcasts__icon podcasts__icon1 flex" aria-label="Прослушано">
                                     <svg class="icon">
                                         <use xlink:href="#play"></use>
                                     </svg> 
                                     <span class="podcasts__counts">27</span>
                                 </button>
-                            <button class="btn-reset podcasts__icon podcasts__icon2 flex" aria-label="Нравиться">
+                                <button class="btn-reset podcasts__icon podcasts__icon2 flex" aria-label="Нравиться">
                                     <svg class="icon">
                                         <use xlink:href="#heart"></use>
                                     </svg>
                                    <span class="podcasts__counts">44</span>
                                 </button>
-                            <button class="btn-reset podcasts__icon podcasts__icon3 flex" aria-label="Поделиться">
+                                <button class="btn-reset podcasts__icon podcasts__icon3 flex" aria-label="Поделиться">
                                     <svg class="icon">
                                         <use xlink:href="#share"></use>
                                     </svg>
                                     <span class="podcasts__counts">68</span>
                                 </button>
-                        </div>
-                    </div>
-                </li>
-                <!-- 4 -->
-                <li class="list podcasts__item flex podcasts__hidden podcasts__hidden-320">
-                    <picture class="podcasts__img flex">
-                        <source srcset="https://martaveresk.github.io/W-Wave/img/podcast_4_320.jpg" media="(max-width: 500px)">
-                        <img src="https://martaveresk.github.io/W-Wave/img/podcast_4.jpg" alt="Фото африканской женщины">
-                    </picture>
-                    <span class="podcasts__data">5 июня</span>
-                    <div class="podcasts__card">
-                        <div class="podcasts__descr flex">
-                            <div class="podcasts__text flex">
-                                <p class="podcasts__time">9:04</p>
-                                <h3 class="title-h3 podcasts__h3">Хэллоу, Африка!</h3>
-                                <p class="podcasts__name">Пётр Дмитриевский</p>
                             </div>
-                            <button class="btn-reset podcasts__play" aria-label="Подкаст Хэллоу, Африка!">
+                        </div>
+                    </li>
+                    <!-- 4 -->
+                    <li class="list podcasts__item flex podcasts__hidden podcasts__hidden-320">
+                        <picture class="podcasts__img flex">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/podcast_4_320.jpg" media="(max-width: 500px)">
+                            <img src="https://martaveresk.github.io/W-Wave/img/podcast_4.jpg" alt="Фото африканской женщины">
+                        </picture>
+                        <span class="podcasts__data">5 июня</span>
+                        <div class="podcasts__card">
+                            <div class="podcasts__descr flex">
+                                <div class="podcasts__text flex">
+                                    <p class="podcasts__time">9:04</p>
+                                    <h3 class="title-h3 podcasts__h3">Хэллоу, Африка!</h3>
+                                    <p class="podcasts__name">Пётр Дмитриевский</p>
+                                </div>
+                                <button class="btn-reset podcasts__play" aria-label="Подкаст Хэллоу, Африка!">
                                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle class="podcasts__svg-round" cx="24" cy="24" r="20" fill></circle>
                                     <circle class="podcasts__svg-border" cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"></circle>
@@ -639,45 +640,45 @@
                                     <rect class="podcasts__svg podcasts__svg-line podcasts__svg-hidden" x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4"></rect>
                                 </svg>
                             </button>
-                            <div class="podcasts__img-gray"></div>
-                        </div>
-                        <div class="podcasts__computed flex">
-                            <button class="btn-reset podcasts__icon podcasts__icon1 flex" aria-label="Прослушано">
+                                <div class="podcasts__img-gray"></div>
+                            </div>
+                            <div class="podcasts__computed flex">
+                                <button class="btn-reset podcasts__icon podcasts__icon1 flex" aria-label="Прослушано">
                                     <svg class="icon">
                                         <use xlink:href="#play"></use>
                                     </svg> 
                                     <span class="podcasts__counts">27</span>
                                 </button>
-                            <button class="btn-reset podcasts__icon podcasts__icon2 flex" aria-label="Нравиться">
+                                <button class="btn-reset podcasts__icon podcasts__icon2 flex" aria-label="Нравиться">
                                     <svg class="icon">
                                         <use xlink:href="#heart"></use>
                                     </svg>
                                    <span class="podcasts__counts">44</span>
                                 </button>
-                            <button class="btn-reset podcasts__icon podcasts__icon3 flex" aria-label="Поделиться">
+                                <button class="btn-reset podcasts__icon podcasts__icon3 flex" aria-label="Поделиться">
                                     <svg class="icon">
                                         <use xlink:href="#share"></use>
                                     </svg>
                                     <span class="podcasts__counts">68</span>
                                 </button>
-                        </div>
-                    </div>
-                </li>
-                <!-- 4 -->
-                <li class="list podcasts__item flex podcasts__hidden podcasts__hidden-320">
-                    <picture class="podcasts__img flex">
-                        <source srcset="https://martaveresk.github.io/W-Wave/img/podcast_4_320.jpg" media="(max-width: 500px)">
-                        <img src="https://martaveresk.github.io/W-Wave/img/podcast_4.jpg" alt="Фото африканской женщины">
-                    </picture>
-                    <span class="podcasts__data">5 июня</span>
-                    <div class="podcasts__card">
-                        <div class="podcasts__descr flex">
-                            <div class="podcasts__text flex">
-                                <p class="podcasts__time">9:04</p>
-                                <h3 class="title-h3 podcasts__h3">Хэллоу, Африка!</h3>
-                                <p class="podcasts__name">Пётр Дмитриевский</p>
                             </div>
-                            <button class="btn-reset podcasts__play" aria-label="Подкаст Хэллоу, Африка!">
+                        </div>
+                    </li>
+                    <!-- 4 -->
+                    <li class="list podcasts__item flex podcasts__hidden podcasts__hidden-320">
+                        <picture class="podcasts__img flex">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/podcast_4_320.jpg" media="(max-width: 500px)">
+                            <img src="https://martaveresk.github.io/W-Wave/img/podcast_4.jpg" alt="Фото африканской женщины">
+                        </picture>
+                        <span class="podcasts__data">5 июня</span>
+                        <div class="podcasts__card">
+                            <div class="podcasts__descr flex">
+                                <div class="podcasts__text flex">
+                                    <p class="podcasts__time">9:04</p>
+                                    <h3 class="title-h3 podcasts__h3">Хэллоу, Африка!</h3>
+                                    <p class="podcasts__name">Пётр Дмитриевский</p>
+                                </div>
+                                <button class="btn-reset podcasts__play" aria-label="Подкаст Хэллоу, Африка!">
                                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle class="podcasts__svg-round" cx="24" cy="24" r="20" fill></circle>
                                     <circle class="podcasts__svg-border" cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"></circle>
@@ -686,150 +687,150 @@
                                     <rect class="podcasts__svg podcasts__svg-line podcasts__svg-hidden" x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4"></rect>
                                 </svg>
                             </button>
-                            <div class="podcasts__img-gray"></div>
-                        </div>
-                        <div class="podcasts__computed flex">
-                            <button class="btn-reset podcasts__icon podcasts__icon1 flex" aria-label="Прослушано">
+                                <div class="podcasts__img-gray"></div>
+                            </div>
+                            <div class="podcasts__computed flex">
+                                <button class="btn-reset podcasts__icon podcasts__icon1 flex" aria-label="Прослушано">
                                     <svg class="icon">
                                         <use xlink:href="#play"></use>
                                     </svg> 
                                     <span class="podcasts__counts">27</span>
                                 </button>
-                            <button class="btn-reset podcasts__icon podcasts__icon2 flex" aria-label="Нравиться">
+                                <button class="btn-reset podcasts__icon podcasts__icon2 flex" aria-label="Нравиться">
                                     <svg class="icon">
                                         <use xlink:href="#heart"></use>
                                     </svg>
                                    <span class="podcasts__counts">44</span>
                                 </button>
-                            <button class="btn-reset podcasts__icon podcasts__icon3 flex" aria-label="Поделиться">
+                                <button class="btn-reset podcasts__icon podcasts__icon3 flex" aria-label="Поделиться">
                                     <svg class="icon">
                                         <use xlink:href="#share"></use>
                                     </svg>
                                     <span class="podcasts__counts">68</span>
                                 </button>
+                            </div>
                         </div>
-                    </div>
-                </li>
-            </ul>
-            <button class="btn-reset podcasts__btn">Ещё подкасты</button>
-        </div>
-    </section>
-    <!-- ________________________________________broadcast_____________________________________________ -->
-    <section class="broadcast" id="broadcast">
-        <div class="container container_padding broadcast__container">
-            <div class="broadcast__wraper flex">
-                <div class="broadcast__header">
-                    <h2 class="title-h2 broadcast__title">Передачи</h2>
-                    <p class="broadcast__subtitle">Автор: </p>
-                    <div class="broadcast__select">
-                        <select class="broadcast__select-list" aria-label="Выбор автора" name="select">
+                    </li>
+                </ul>
+                <button class="btn-reset podcasts__btn">Ещё подкасты</button>
+            </div>
+        </section>
+        <!-- ________________________________________broadcast_____________________________________________ -->
+        <section class="broadcast" id="broadcast">
+            <div class="container container_padding broadcast__container">
+                <div class="broadcast__wraper flex">
+                    <div class="broadcast__header">
+                        <h2 class="title-h2 broadcast__title">Передачи</h2>
+                        <p class="broadcast__subtitle">Автор: </p>
+                        <div class="broadcast__select">
+                            <select class="broadcast__select-list" aria-label="Выбор автора" name="select">
                             <option value="Дмитрий Гутенберг" selected>Дмитрий Гутенберг</option>
                             <option value="Татьяна Флеганова">Татьяна Флеганова</option>
                             <option value="Анна Васильева">Анна Васильева</option>
                             <option value="Пётр Дмитриевский">Пётр Дмитриевский</option>
                        </select>
+                        </div>
                     </div>
-                </div>
-                <ul class="list broadcast__list flex">
-                    <li class="broadcast__item flex">
-                        <button class="btn-reset broadcast__button flex" aria-label="Передача О людях и книгах Подробнее">
+                    <ul class="list broadcast__list flex">
+                        <li class="broadcast__item flex">
+                            <button class="btn-reset broadcast__button flex" aria-label="Передача О людях и книгах Подробнее">
                             <span class="broadcast__button-text">Подробнее</span>    
                             <svg class="icon">
                                 <use xlink:href="#arrow_small"></use>
                               </svg>
                         </button>
-                        <div class="broadcast__block">
-                            <picture class="broadcast__img flex">
-                                <source srcset="https://martaveresk.github.io/W-Wave/img/broadcast_1_320.jpg" media="(max-width: 320px)">
-                                <img src="https://martaveresk.github.io/W-Wave/img/broadcast_1.jpg" alt="Рисунок печатной мастерской">
-                            </picture>
-                            <h4 class="title-h3 broadcast__h4">О людях и книгах</h4>
-                            <p class="broadcast__text">Анонсируется отдельно</p>
-                        </div>
-                    </li>
-                    <li class="broadcast__item flex">
-                        <button class="btn-reset broadcast__button flex" aria-label="Передача Графомания Подробнее">
+                            <div class="broadcast__block">
+                                <picture class="broadcast__img flex">
+                                    <source srcset="https://martaveresk.github.io/W-Wave/img/broadcast_1_320.jpg" media="(max-width: 320px)">
+                                    <img src="https://martaveresk.github.io/W-Wave/img/broadcast_1.jpg" alt="Рисунок печатной мастерской">
+                                </picture>
+                                <h4 class="title-h3 broadcast__h4">О людях и книгах</h4>
+                                <p class="broadcast__text">Анонсируется отдельно</p>
+                            </div>
+                        </li>
+                        <li class="broadcast__item flex">
+                            <button class="btn-reset broadcast__button flex" aria-label="Передача Графомания Подробнее">
                             <span class="broadcast__button-text">Подробнее</span>    
                             <svg class="icon">
                                 <use xlink:href="#arrow_small"></use>
                               </svg>
                         </button>
-                        <div class="broadcast__block">
-                            <picture class="broadcast__img flex">
-                                <source srcset="https://martaveresk.github.io/W-Wave/img/broadcast_2_320.jpg" media="(max-width: 320px)">
-                                <img src="https://martaveresk.github.io/W-Wave/img/broadcast_2.jpg" alt="Рискнок читающего человека">
-                            </picture>
-                            <h4 class="title-h3 broadcast__h4">Графомания td.</h4>
-                            <p class="broadcast__text">По понедельникам в 10:00 </p>
-                        </div>
-                    </li>
-                    <li class="broadcast__item flex">
-                        <button class="btn-reset broadcast__button flex" aria-label="Передача Не Рим, не Троя Подробнее">
+                            <div class="broadcast__block">
+                                <picture class="broadcast__img flex">
+                                    <source srcset="https://martaveresk.github.io/W-Wave/img/broadcast_2_320.jpg" media="(max-width: 320px)">
+                                    <img src="https://martaveresk.github.io/W-Wave/img/broadcast_2.jpg" alt="Рискнок читающего человека">
+                                </picture>
+                                <h4 class="title-h3 broadcast__h4">Графомания td.</h4>
+                                <p class="broadcast__text">По понедельникам в 10:00 </p>
+                            </div>
+                        </li>
+                        <li class="broadcast__item flex">
+                            <button class="btn-reset broadcast__button flex" aria-label="Передача Не Рим, не Троя Подробнее">
                             <span class="broadcast__button-text">Подробнее</span>    
                             <svg class="icon">
                                 <use xlink:href="#arrow_small"></use>
                               </svg>
                         </button>
-                        <div class="broadcast__block">
-                            <picture class="broadcast__img flex">
-                                <source srcset="https://martaveresk.github.io/W-Wave/img/broadcast_3_320.jpg" media="(max-width: 320px)">
-                                <img src="https://martaveresk.github.io/W-Wave/img/broadcast_3.jpg" alt="Рисунок римского коллизея">
-                            </picture>
-                            <h4 class="title-h3 broadcast__h4">Не Рим, не Троя</h4>
-                            <p class="broadcast__text">По вторникам в 12:00</p>
-                        </div>
-                    </li>
-                    <li class="broadcast__item flex">
-                        <button class="btn-reset broadcast__button flex" aria-label="Передача Эрудит Подробнее">
+                            <div class="broadcast__block">
+                                <picture class="broadcast__img flex">
+                                    <source srcset="https://martaveresk.github.io/W-Wave/img/broadcast_3_320.jpg" media="(max-width: 320px)">
+                                    <img src="https://martaveresk.github.io/W-Wave/img/broadcast_3.jpg" alt="Рисунок римского коллизея">
+                                </picture>
+                                <h4 class="title-h3 broadcast__h4">Не Рим, не Троя</h4>
+                                <p class="broadcast__text">По вторникам в 12:00</p>
+                            </div>
+                        </li>
+                        <li class="broadcast__item flex">
+                            <button class="btn-reset broadcast__button flex" aria-label="Передача Эрудит Подробнее">
                             <span class="broadcast__button-text">Подробнее</span>    
                             <svg class="icon">
                                 <use xlink:href="#arrow_small"></use>
                               </svg>
                         </button>
-                        <div class="broadcast__block">
-                            <picture class="broadcast__img flex">
-                                <source srcset="https://martaveresk.github.io/W-Wave/img/broadcast_4_320.jpg" media="(max-width: 320px)">
-                                <img src="https://martaveresk.github.io/W-Wave/img/broadcast_4.jpg" alt="Русунок думающего человека">
-                            </picture>
-                            <h4 class="title-h3 broadcast__h4">Эрудит</h4>
-                            <p class="broadcast__text">По пятницам в 17:00</p>
-                        </div>
-                    </li>
-                    <li class="broadcast__item flex">
-                        <button class="btn-reset broadcast__button flex" aria-label="Передача Тонкости эпох Подробнее">
+                            <div class="broadcast__block">
+                                <picture class="broadcast__img flex">
+                                    <source srcset="https://martaveresk.github.io/W-Wave/img/broadcast_4_320.jpg" media="(max-width: 320px)">
+                                    <img src="https://martaveresk.github.io/W-Wave/img/broadcast_4.jpg" alt="Русунок думающего человека">
+                                </picture>
+                                <h4 class="title-h3 broadcast__h4">Эрудит</h4>
+                                <p class="broadcast__text">По пятницам в 17:00</p>
+                            </div>
+                        </li>
+                        <li class="broadcast__item flex">
+                            <button class="btn-reset broadcast__button flex" aria-label="Передача Тонкости эпох Подробнее">
                             <span class="broadcast__button-text">Подробнее</span>    
                             <svg class="icon">
                                 <use xlink:href="#arrow_small"></use>
                               </svg>
                         </button>
-                        <div class="broadcast__block">
-                            <picture class="broadcast__img flex">
-                                <source srcset="https://martaveresk.github.io/W-Wave/img/broadcast_5_320.jpg" media="(max-width: 320px)">
-                                <img src="https://martaveresk.github.io/W-Wave/img/broadcast_5.jpg" alt="Рисунок зайца на собаке">
-                            </picture>
-                            <h4 class="title-h3 broadcast__h4">Тонкости эпох</h4>
-                            <p class="broadcast__text">По субботам в 10:00</p>
-                        </div>
-                    </li>
-                    <li class="broadcast__item flex">
-                        <button class="btn-reset broadcast__button flex" aria-label="Передача Живые мысли Подробнее">
+                            <div class="broadcast__block">
+                                <picture class="broadcast__img flex">
+                                    <source srcset="https://martaveresk.github.io/W-Wave/img/broadcast_5_320.jpg" media="(max-width: 320px)">
+                                    <img src="https://martaveresk.github.io/W-Wave/img/broadcast_5.jpg" alt="Рисунок зайца на собаке">
+                                </picture>
+                                <h4 class="title-h3 broadcast__h4">Тонкости эпох</h4>
+                                <p class="broadcast__text">По субботам в 10:00</p>
+                            </div>
+                        </li>
+                        <li class="broadcast__item flex">
+                            <button class="btn-reset broadcast__button flex" aria-label="Передача Живые мысли Подробнее">
                             <span class="broadcast__button-text">Подробнее</span>    
                             <svg class="icon">
                                 <use xlink:href="#arrow_small"></use>
                               </svg>
                         </button>
-                        <div class="broadcast__block">
-                            <picture class="broadcast__img flex">
-                                <source srcset="https://martaveresk.github.io/W-Wave/img/broadcast_6_320.jpg" media="(max-width: 320px)">
-                                <img src="https://martaveresk.github.io/W-Wave/img/broadcast_6.jpg" alt="Рисунок ежика">
-                            </picture>
-                            <h4 class="title-h3 broadcast__h4">Живые мысли</h4>
-                            <p class="broadcast__text">По воскресеньям в 15:30</p>
-                        </div>
-                    </li>
-                </ul>
-                <div class="broadcast__footer">
-                    <button class="btn-reset broadcast__btn flex">
+                            <div class="broadcast__block">
+                                <picture class="broadcast__img flex">
+                                    <source srcset="https://martaveresk.github.io/W-Wave/img/broadcast_6_320.jpg" media="(max-width: 320px)">
+                                    <img src="https://martaveresk.github.io/W-Wave/img/broadcast_6.jpg" alt="Рисунок ежика">
+                                </picture>
+                                <h4 class="title-h3 broadcast__h4">Живые мысли</h4>
+                                <p class="broadcast__text">По воскресеньям в 15:30</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="broadcast__footer">
+                        <button class="btn-reset broadcast__btn flex">
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9 1.5L1.5 5.25L9 9L16.5 5.25L9 1.5Z" stroke="#121723" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         <path d="M1.5 12.75L9 16.5L16.5 12.75" stroke="#121723" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -837,22 +838,22 @@
                         </svg>
                     Архив 
                 </button>
-                    <p class="broadcast__descr">В архив попадают все передачи, которые вы пропустили! Enjoy :)</p>
+                        <p class="broadcast__descr">В архив попадают все передачи, которые вы пропустили! Enjoy :)</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- ________________________________________guests_____________________________________________ -->
-    <section class="guests" id="guests">
-        <div class="container container_padding guests__container">
-            <h2 class="title-h2 guests__title">Гости</h2>
-            <p class="guests__subtitle">У нас бывают:</p>
-            <p class="guests__text">Блогеры, арт-критики и&nbsp;деятели искусства, музыканты, молодые учёные и&nbsp;люди науки, историки, филологи и&nbsp;много других интересных гостей!</p>
-            <div class="guests__content flex">
-                <div class="accordion">
-                    <ul class="questions reset-list js-accordion-container">
-                        <li class="accordion__question ac js-enabled">
-                            <button class="accordion__heading ac-trigger">
+        </section>
+        <!-- ________________________________________guests_____________________________________________ -->
+        <section class="guests" id="guests">
+            <div class="container container_padding guests__container">
+                <h2 class="title-h2 guests__title">Гости</h2>
+                <p class="guests__subtitle">У нас бывают:</p>
+                <p class="guests__text">Блогеры, арт-критики и&nbsp;деятели искусства, музыканты, молодые учёные и&nbsp;люди науки, историки, филологи и&nbsp;много других интересных гостей!</p>
+                <div class="guests__content flex">
+                    <div class="accordion">
+                        <ul class="questions reset-list js-accordion-container">
+                            <li class="accordion__question ac js-enabled">
+                                <button class="accordion__heading ac-trigger">
                                     <span class="accordion__heading-text">
                                       <span class="accordion__heading-text-wrap">Блогеры</span>
                                     </span>
@@ -863,91 +864,91 @@
                                         </svg>
                                   </button>
 
-                            <div class="accordion__content ac-panel">
-                                <div class="accordion__content-wrap">
-                                    <ul class="accordion__inner-list reset-list">
-                                        <li class="accordion__item">
-                                            <a class="accordion__link" href="#guest" data-path="empty">
-                                                <span class="accordion__text">Сергей Денисов</span>
-                                            </a>
-                                        </li>
-                                        <li class="accordion__item">
-                                            <a class="accordion__link " href="#guest" data-path="empty">
-                                                <span class="accordion__text">Матвей Мечников</span>
-                                            </a>
-                                        </li>
-                                        <li class="accordion__item">
-                                            <a class="accordion__link " href="#guest" data-path="empty">
-                                                <span class="accordion__text">Константин Прусино</span>
-                                            </a>
-                                        </li>
-                                        <li class="accordion__item">
-                                            <a class="accordion__link  " href="#guest" data-path="empty">
-                                                <span class="accordion__text">Иван Калитников</span>
-                                            </a>
-                                        </li>
-                                        <li class="accordion__item">
-                                            <a class="accordion__link " href="#guest" data-path="empty">
-                                                <span class="accordion__text">Евгений Войновский</span>
-                                            </a>
-                                        </li>
-                                        <li class="accordion__item">
-                                            <a class="accordion__link  accordion__link_active" href="#guest" data-path="martinova">
-                                                <span class="accordion__text">Ольга Мартынова</span>
-                                            </a>
-                                        </li>
-                                        <li class="accordion__item">
-                                            <a class="accordion__link " href="#guest" data-path="empty">
-                                                <span class="accordion__text">Дмитрий Михалок</span>
-                                            </a>
-                                        </li>
-                                        <li class="accordion__item">
-                                            <a class="accordion__link " href="#guest" data-path="empty">
-                                                <span class="accordion__text">Пётр Пиотровский</span>
-                                            </a>
-                                        </li>
-                                        <li class="accordion__item">
-                                            <a class="accordion__link " href="#guest" data-path="empty">
-                                                <span class="accordion__text">Олег Свиридовский</span>
-                                            </a>
-                                        </li>
-                                        <li class="accordion__item">
-                                            <a class="accordion__link " href="#guest" data-path="empty">
-                                                <span class="accordion__text">Владислав Кауперс</span>
-                                            </a>
-                                        </li>
-                                        <li class="accordion__item">
-                                            <a class="accordion__link " href="#guest" data-path="empty">
-                                                <span class="accordion__text">Михаил Пожитников</span>
-                                            </a>
-                                        </li>
-                                        <li class="accordion__item">
-                                            <a class="accordion__link " href="#guest" data-path="empty">
-                                                <span class="accordion__text">Георгий Полуян</span>
-                                            </a>
-                                        </li>
-                                        <li class="accordion__item">
-                                            <a class="accordion__link " href="#guest" data-path="empty">
-                                                <span class="accordion__text">Денис Тельман</span>
-                                            </a>
-                                        </li>
-                                        <li class="accordion__item">
-                                            <a class="accordion__link " href="#guest" data-path="empty">
-                                                <span class="accordion__text">Юрий Горин</span>
-                                            </a>
-                                        </li>
-                                        <li class="accordion__item">
-                                            <a class="accordion__link " href="#guest" data-path="empty">
-                                                <span class="accordion__text">Максим Сергеев</span>
-                                            </a>
-                                        </li>
-                                    </ul>
+                                <div class="accordion__content ac-panel">
+                                    <div class="accordion__content-wrap">
+                                        <ul class="accordion__inner-list reset-list">
+                                            <li class="accordion__item">
+                                                <a class="accordion__link" href="#guest" data-path="empty">
+                                                    <span class="accordion__text">Сергей Денисов</span>
+                                                </a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a class="accordion__link " href="#guest" data-path="empty">
+                                                    <span class="accordion__text">Матвей Мечников</span>
+                                                </a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a class="accordion__link " href="#guest" data-path="empty">
+                                                    <span class="accordion__text">Константин Прусино</span>
+                                                </a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a class="accordion__link  " href="#guest" data-path="empty">
+                                                    <span class="accordion__text">Иван Калитников</span>
+                                                </a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a class="accordion__link " href="#guest" data-path="empty">
+                                                    <span class="accordion__text">Евгений Войновский</span>
+                                                </a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a class="accordion__link  accordion__link_active" href="#guest" data-path="martinova">
+                                                    <span class="accordion__text">Ольга Мартынова</span>
+                                                </a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a class="accordion__link " href="#guest" data-path="empty">
+                                                    <span class="accordion__text">Дмитрий Михалок</span>
+                                                </a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a class="accordion__link " href="#guest" data-path="empty">
+                                                    <span class="accordion__text">Пётр Пиотровский</span>
+                                                </a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a class="accordion__link " href="#guest" data-path="empty">
+                                                    <span class="accordion__text">Олег Свиридовский</span>
+                                                </a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a class="accordion__link " href="#guest" data-path="empty">
+                                                    <span class="accordion__text">Владислав Кауперс</span>
+                                                </a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a class="accordion__link " href="#guest" data-path="empty">
+                                                    <span class="accordion__text">Михаил Пожитников</span>
+                                                </a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a class="accordion__link " href="#guest" data-path="empty">
+                                                    <span class="accordion__text">Георгий Полуян</span>
+                                                </a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a class="accordion__link " href="#guest" data-path="empty">
+                                                    <span class="accordion__text">Денис Тельман</span>
+                                                </a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a class="accordion__link " href="#guest" data-path="empty">
+                                                    <span class="accordion__text">Юрий Горин</span>
+                                                </a>
+                                            </li>
+                                            <li class="accordion__item">
+                                                <a class="accordion__link " href="#guest" data-path="empty">
+                                                    <span class="accordion__text">Максим Сергеев</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
+                            </li>
 
-                        <li class="accordion__question ac js-enabled">
-                            <button class="accordion__heading ac-trigger">
+                            <li class="accordion__question ac js-enabled">
+                                <button class="accordion__heading ac-trigger">
                                     <span class="accordion__heading-text">
                                       <span class="accordion__heading-text-wrap">Арт-критики</span>
                                     </span>
@@ -958,17 +959,17 @@
                                         </svg>
                                   </button>
 
-                            <div class="accordion__content ac-panel">
-                                <div class="accordion__content-wrap">
-                                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet
-                                        voluptas atque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis
-                                        explicabo ipsam eveniet voluptas atque accusamus.</p>
+                                <div class="accordion__content ac-panel">
+                                    <div class="accordion__content-wrap">
+                                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis explicabo ipsam
+                                            eveniet voluptas atque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae,
+                                            minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
+                            </li>
 
-                        <li class="accordion__question ac js-enabled">
-                            <button class="accordion__heading ac-trigger">
+                            <li class="accordion__question ac js-enabled">
+                                <button class="accordion__heading ac-trigger">
                                     <span class="accordion__heading-text">
                                       <span class="accordion__heading-text-wrap">Художники</span>
                                     </span>
@@ -979,17 +980,17 @@
                                         </svg>
                                   </button>
 
-                            <div class="accordion__content ac-panel">
-                                <div class="accordion__content-wrap">
-                                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet
-                                        voluptas atque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis
-                                        explicabo ipsam eveniet voluptas atque accusamus.</p>
+                                <div class="accordion__content ac-panel">
+                                    <div class="accordion__content-wrap">
+                                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis explicabo ipsam
+                                            eveniet voluptas atque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae,
+                                            minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
+                            </li>
 
-                        <li class="accordion__question ac js-enabled">
-                            <button class="accordion__heading ac-trigger">
+                            <li class="accordion__question ac js-enabled">
+                                <button class="accordion__heading ac-trigger">
                                     <span class="accordion__heading-text">
                                       <span class="accordion__heading-text-wrap">Люди науки</span>
                                     </span>
@@ -1000,17 +1001,17 @@
                                         </svg>
                                   </button>
 
-                            <div class="accordion__content ac-panel">
-                                <div class="accordion__content-wrap">
-                                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet
-                                        voluptas atque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis
-                                        explicabo ipsam eveniet voluptas atque accusamus.</p>
+                                <div class="accordion__content ac-panel">
+                                    <div class="accordion__content-wrap">
+                                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis explicabo ipsam
+                                            eveniet voluptas atque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae,
+                                            minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
+                            </li>
 
-                        <li class="accordion__question ac js-enabled">
-                            <button class="accordion__heading ac-trigger">
+                            <li class="accordion__question ac js-enabled">
+                                <button class="accordion__heading ac-trigger">
                                     <span class="accordion__heading-text">
                                       <span class="accordion__heading-text-wrap">Историки</span>
                                     </span>
@@ -1021,17 +1022,17 @@
                                         </svg>
                                   </button>
 
-                            <div class="accordion__content ac-panel">
-                                <div class="accordion__content-wrap">
-                                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet
-                                        voluptas atque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis
-                                        explicabo ipsam eveniet voluptas atque accusamus.</p>
+                                <div class="accordion__content ac-panel">
+                                    <div class="accordion__content-wrap">
+                                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis explicabo ipsam
+                                            eveniet voluptas atque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae,
+                                            minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
+                            </li>
 
-                        <li class="accordion__question ac js-enabled">
-                            <button class="accordion__heading ac-trigger">
+                            <li class="accordion__question ac js-enabled">
+                                <button class="accordion__heading ac-trigger">
                                     <span class="accordion__heading-text">
                                       <span class="accordion__heading-text-wrap">Филологи</span>
                                     </span>
@@ -1042,512 +1043,514 @@
                                         </svg>
                                   </button>
 
-                            <div class="accordion__content ac-panel">
-                                <div class="accordion__content-wrap">
-                                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis explicabo ipsam eveniet
-                                        voluptas atque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis
-                                        explicabo ipsam eveniet voluptas atque accusamus.</p>
+                                <div class="accordion__content ac-panel">
+                                    <div class="accordion__content-wrap">
+                                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae, minus perspiciatis explicabo ipsam
+                                            eveniet voluptas atque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nostrum doloremque reprehenderit saepe corrupti eum culpa tempore asperiores officiis sint. Culpa molestiae,
+                                            minus perspiciatis explicabo ipsam eveniet voluptas atque accusamus.</p>
+                                    </div>
                                 </div>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                    <!-- martinova -->
+                    <div class="guests__card-wrap flex" id="guest">
+                        <div class="guests__card guests__card_active" data-target="martinova">
+                            <picture class="guests__img flex">
+                                <source srcset="https://martaveresk.github.io/W-Wave/img/guest_1_320.jpg" media="(max-width: 500px)">
+                                <source srcset="https://martaveresk.github.io/W-Wave/img/guest_1_768.jpg" media="(max-width: 1023px)">
+                                <source srcset="https://martaveresk.github.io/W-Wave/img/guest_1_1024.jpg" media="(max-width: 1200px)">
+                                <img src="https://martaveresk.github.io/W-Wave/img/guest_1.jpg" alt="Фото Ольги Мартыновой">
+                            </picture>
+                            <div class="guests__social flex">
+                                <a class="guests__link flex" href="#!" aria-label="instagram">
+                                    <svg class="icon">
+                                <use xlink:href="#instagram"></use>
+                            </svg>
+                                </a>
+                                <a class="guests__link flex" href="#!" aria-label="facebook">
+                                    <svg class="icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                                </a>
+                                <a class="guests__link flex" href="#!" aria-label="twitter">
+                                    <svg class="icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                                </a>
                             </div>
-                        </li>
-
-
-                    </ul>
-                </div>
-                <!-- martinova -->
-                <div class="guests__card-wrap flex" id="guest">
-                    <div class="guests__card guests__card_active" data-target="martinova">
-                        <picture class="guests__img flex">
-                            <source srcset="https://martaveresk.github.io/W-Wave/img/guest_1_320.jpg" media="(max-width: 500px)">
-                            <source srcset="https://martaveresk.github.io/W-Wave/img/guest_1_768.jpg" media="(max-width: 1023px)">
-                            <source srcset="https://martaveresk.github.io/W-Wave/img/guest_1_1024.jpg" media="(max-width: 1200px)">
-                            <img src="https://martaveresk.github.io/W-Wave/img/guest_1.jpg" alt="Фото Ольги Мартыновой">
-                        </picture>
-                        <div class="guests__social flex">
-                            <a class="guests__link flex" href="#!" aria-label="instagram">
-                                <svg class="icon">
+                            <h3 class="title-h3 guests__name">Ольга&nbsp;Мартынова</h3>
+                            <p class="guests__discr">Российский искусствовед, арт-критик, куратор выставок, дизайнер, кандидат культурологии. Арт-критик газеты &laquo;Коммерсантъ&raquo;. Ведёт активную блогерскую деятельность как куратор музея &laquo;Гараж&raquo;, коим является
+                                с&nbsp;2016&nbsp;года.
+                            </p>
+                        </div>
+                        <!-- empty -->
+                        <div class="guests__card" data-target="empty">
+                            <picture class="guests__img flex">
+                                <source srcset="https://martaveresk.github.io/W-Wave/img/empty_320.jpg" media="(max-width: 500px)">
+                                <source srcset="https://martaveresk.github.io/W-Wave/img/empty_768.jpg" media="(max-width: 1023px)">
+                                <source srcset="https://martaveresk.github.io/W-Wave/img/empty_1024.jpg" media="(max-width: 1200px)">
+                                <img src="https://martaveresk.github.io/W-Wave/img/empty.jpg" alt="Тут будет фото гостя">
+                            </picture>
+                            <div class="guests__social flex">
+                                <a class="guests__link flex" href="#!" aria-label="instagram">
+                                    <svg class="icon">
                                 <use xlink:href="#instagram"></use>
                             </svg>
-                            </a>
-                            <a class="guests__link flex" href="#!" aria-label="facebook">
-                                <svg class="icon">
+                                </a>
+                                <a class="guests__link flex" href="#!" aria-label="facebook">
+                                    <svg class="icon">
                                 <use xlink:href="#facebook"></use>
                             </svg>
-                            </a>
-                            <a class="guests__link flex" href="#!" aria-label="twitter">
-                                <svg class="icon">
+                                </a>
+                                <a class="guests__link flex" href="#!" aria-label="twitter">
+                                    <svg class="icon">
                                 <use xlink:href="#twitter"></use>
                             </svg>
-                            </a>
+                                </a>
+                            </div>
+                            <h3 class="title-h3 guests__name">Имя гостя</h3>
+                            <p class="guests__discr">Информация о госте</p>
                         </div>
-                        <h3 class="title-h3 guests__name">Ольга&nbsp;Мартынова</h3>
-                        <p class="guests__discr">Российский искусствовед, арт-критик, куратор выставок, дизайнер, кандидат культурологии. Арт-критик газеты &laquo;Коммерсантъ&raquo;. Ведёт активную блогерскую деятельность как куратор музея &laquo;Гараж&raquo;, коим является с&nbsp;2016&nbsp;года.</p>
+                        <button class="btn-reset guests__btn btn-theme1">Эфиры с гостем</button>
                     </div>
-                    <!-- empty -->
-                    <div class="guests__card" data-target="empty">
-                        <picture class="guests__img flex">
-                            <source srcset="https://martaveresk.github.io/W-Wave/img/empty_320.jpg" media="(max-width: 500px)">
-                            <source srcset="https://martaveresk.github.io/W-Wave/img/empty_768.jpg" media="(max-width: 1023px)">
-                            <source srcset="https://martaveresk.github.io/W-Wave/img/empty_1024.jpg" media="(max-width: 1200px)">
-                            <img src="https://martaveresk.github.io/W-Wave/img/empty.jpg" alt="Тут будет фото гостя">
-                        </picture>
-                        <div class="guests__social flex">
-                            <a class="guests__link flex" href="#!" aria-label="instagram">
-                                <svg class="icon">
-                                <use xlink:href="#instagram"></use>
-                            </svg>
-                            </a>
-                            <a class="guests__link flex" href="#!" aria-label="facebook">
-                                <svg class="icon">
-                                <use xlink:href="#facebook"></use>
-                            </svg>
-                            </a>
-                            <a class="guests__link flex" href="#!" aria-label="twitter">
-                                <svg class="icon">
-                                <use xlink:href="#twitter"></use>
-                            </svg>
-                            </a>
-                        </div>
-                        <h3 class="title-h3 guests__name">Имя гостя</h3>
-                        <p class="guests__discr">Информация о госте</p>
-                    </div>
-                    <button class="btn-reset guests__btn btn-theme1">Эфиры с гостем</button>
-                </div>
 
+                </div>
             </div>
-        </div>
-    </section>
-    <!-- ________________________________________playlists_____________________________________________ -->
-    <section class="playlists" id="playlists">
-        <div class="container container_padding playlists__container">
-            <div class="playlists__block flex">
-                <div class="playlists__header swiper" data-mobile="false">
-                    <!-- <div class="playlists__header"> -->
-                    <h2 class="title-h2 playlists__title">Плейлисты</h2>
-                    <p class="playlists__subtitle">Жанр: </p>
-                    <div class="playlists__checkbox flex swiper-wrapper">
-                        <!-- <div class="playlists__checkbox flex"> -->
-                        <label class="playlists__label">  
+        </section>
+        <!-- ________________________________________playlists_____________________________________________ -->
+        <section class="playlists" id="playlists">
+            <div class="container container_padding playlists__container">
+                <div class="playlists__block flex">
+                    <div class="playlists__header swiper" data-mobile="false">
+                        <!-- <div class="playlists__header"> -->
+                        <h2 class="title-h2 playlists__title">Плейлисты</h2>
+                        <p class="playlists__subtitle">Жанр: </p>
+                        <div class="playlists__checkbox flex swiper-wrapper">
+                            <!-- <div class="playlists__checkbox flex"> -->
+                            <label class="playlists__label">  
                             <input class="playlists__input" type="radio" name="check" checked>
                             <span class="playlists__check">Постпанк</span>
                         </label>
-                        <label class="playlists__label">  
+                            <label class="playlists__label">  
                             <input class="playlists__input" type="radio" name="check">
                             <span class="playlists__check">Хардкор</span>
                             
                         </label>
-                        <label class="playlists__label">  
+                            <label class="playlists__label">  
                             <input class="playlists__input" type="radio" name="check">
                             <span class="playlists__check">Панк-рок</span>
                         </label>
-                        <label class="playlists__label">  
+                            <label class="playlists__label">  
                             <input class="playlists__input" type="radio" name="check">
                             <span class="playlists__check">Рок</span>
                         </label>
-                        <label class="playlists__label">  
+                            <label class="playlists__label">  
                             <input class="playlists__input" type="radio" name="check">
                             <span class="playlists__check">Прогрессивный&nbsp;рок</span>
                         </label>
-                        <label class="playlists__label">  
+                            <label class="playlists__label">  
                             <input class="playlists__input" type="radio" name="check">
                             <span class="playlists__check">Электронная&nbsp;музыка</span>
                         </label>
-                        <label class="playlists__label">  
+                            <label class="playlists__label">  
                             <input class="playlists__input" type="radio" name="check">
                             <span class="playlists__check">Классическая&nbsp;музыка</span>
                         </label>
-                        <label class="playlists__label">  
+                            <label class="playlists__label">  
                             <input class="playlists__input" type="radio" name="check">
                             <span class="playlists__check">Звуки&nbsp;природы&nbsp;и&nbsp;шум&nbsp;города</span>
                        </label>
-                    </div>
-                </div>
-
-                <div class="swiper playlists__swiper">
-                    <div class="playlists__swiper-btn flex">
-                        <button class="btn-reset swiper-button-prev playlists__prev" aria-label="К предыдущему слайду"></button>
-                        <div class="swiper-pagination playlists__pag"></div>
-                        <button class="btn-reset swiper-button-next playlists__next" aria-label="К следующему слайду"></button>
-                    </div>
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper playlists__swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <ul class="list playlists__list flex">
-                                <!-- _______________________________________ -->
-                                <li class="playlists__item flex">
-                                    <button class="btn-reset playlists__card" aria-label="Плейлист Ploho"></button>
-                                    <div class="playlists__block-top">
-                                        <picture class="playlists__img flex">
-                                            <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_1_320.jpg" media="(max-width: 767px)">
-                                            <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_1_1024.jpg" media="(max-width: 1124px)">
-                                            <img src="https://martaveresk.github.io/W-Wave/img/playlists_1.jpg" alt="Фото Ploho">
-                                        </picture>
-                                        <div class="playlists__icon playlists__icon_ru"></div>
-                                        <div class="playlists__btn flex">
-                                            <div></div>
-                                        </div>
-                                    </div>
-                                    <div class="playlists__block-bottom">
-                                        <h4 class="title-h4 playlists__h4">Ploho</h4>
-                                        <p class="playlists__text">3 последних альбома</p>
-                                    </div>
-                                </li>
-                                <li class="playlists__item flex">
-                                    <button class="btn-reset playlists__card" aria-label="Плейлист Molchat Doma"></button>
-                                    <div class="playlists__block-top">
-                                        <picture class="playlists__img flex">
-                                            <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_2_320.jpg" media="(max-width: 767px)">
-                                            <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_2_1024.jpg" media="(max-width: 1124px)">
-                                            <img src="https://martaveresk.github.io/W-Wave/img/playlists_2.jpg" alt="Фото Molchat Doma">
-                                        </picture>
-                                        <div class="playlists__icon playlists__icon_ru"></div>
-                                        <div class="playlists__btn flex">
-                                            <div></div>
-                                        </div>
-                                    </div>
-                                    <div class="playlists__block-bottom">
-                                        <h4 class="title-h4 playlists__h4">Molchat Doma</h4>
-                                        <p class="playlists__text">Все песни</p>
-                                    </div>
-                                </li>
-                                <li class="playlists__item flex">
-                                    <button class="btn-reset playlists__card" aria-label="Плейлист Motorama"></button>
-                                    <div class="playlists__block-top">
-                                        <picture class="playlists__img flex">
-                                            <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_3_320.jpg" media="(max-width: 767px)">
-                                            <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_3_1024.jpg" media="(max-width: 1124px)">
-                                            <img src="https://martaveresk.github.io/W-Wave/img/playlists_3.jpg" alt="Фото Motorama">
-                                        </picture>
-                                        <div class="playlists__icon playlists__icon_ru"></div>
-                                        <div class="playlists__btn flex">
-                                            <div></div>
-                                        </div>
-                                    </div>
-                                    <div class="playlists__block-bottom">
-                                        <h4 class="title-h4 playlists__h4">Motorama</h4>
-                                        <p class="playlists__text">Все песни</p>
-                                    </div>
-                                </li>
-                                <li class="playlists__item flex">
-                                    <button class="btn-reset playlists__card" aria-label="Плейлист Human Tetris"></button>
-                                    <div class="playlists__block-top">
-                                        <picture class="playlists__img flex">
-                                            <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_4_320.jpg" media="(max-width: 767px)">
-                                            <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_4_1024.jpg" media="(max-width: 1124px)">
-                                            <img src="https://martaveresk.github.io/W-Wave/img/playlists_4.jpg" alt="Фото Human Tetris">
-                                        </picture>
-                                        <div class="playlists__icon playlists__icon_ru"></div>
-                                        <div class="playlists__btn flex">
-                                            <div></div>
-                                        </div>
-                                    </div>
-                                    <div class="playlists__block-bottom">
-                                        <h4 class="title-h4 playlists__h4">Human Tetris</h4>
-                                        <p class="playlists__text">Лучшее за всё время</p>
-                                    </div>
-                                </li>
-                                <li class="playlists__item flex">
-                                    <button class="btn-reset playlists__card" aria-label="Плейлист Буерак"></button>
-                                    <div class="playlists__block-top">
-                                        <picture class="playlists__img flex">
-                                            <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_5_320.jpg" media="(max-width: 767px)">
-                                            <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_5_1024.jpg" media="(max-width: 1124px)">
-                                            <img src="https://martaveresk.github.io/W-Wave/img/playlists_5.jpg" alt="Фото Буерак">
-                                        </picture>
-                                        <div class="playlists__icon playlists__icon_ru"></div>
-                                        <div class="playlists__btn flex">
-                                            <div></div>
-                                        </div>
-                                    </div>
-                                    <div class="playlists__block-bottom">
-                                        <h4 class="title-h4 playlists__h4">Буерак</h4>
-                                        <p class="playlists__text">Все EP</p>
-                                    </div>
-                                </li>
-                                <li class="playlists__item flex">
-                                    <button class="btn-reset playlists__card" aria-label="Плейлист Июльские Дни"></button>
-                                    <div class="playlists__block-top">
-                                        <picture class="playlists__img flex">
-                                            <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_6_320.jpg" media="(max-width: 767px)">
-                                            <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_6_1024.jpg" media="(max-width: 1124px)">
-                                            <img src="https://martaveresk.github.io/W-Wave/img/playlists_6.jpg" alt="Фото Июльские Дни">
-                                        </picture>
-                                        <div class="playlists__icon playlists__icon_ru"></div>
-                                        <div class="playlists__btn flex">
-                                            <div></div>
-                                        </div>
-                                    </div>
-                                    <div class="playlists__block-bottom">
-                                        <h4 class="title-h4 playlists__h4">Июльские Дни</h4>
-                                        <p class="playlists__text">Альбом «Колокол»</p>
-                                    </div>
-                                </li>
-                                <li class="playlists__item flex">
-                                    <button class="btn-reset playlists__card" aria-label="Плейлист Joy Division"></button>
-                                    <div class="playlists__block-top">
-                                        <picture class="playlists__img flex">
-                                            <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_7_320.jpg" media="(max-width: 767px)">
-                                            <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_7_1024.jpg" media="(max-width: 1124px)">
-                                            <img src="https://martaveresk.github.io/W-Wave/img/playlists_7.jpg" alt="Фото Joy Division">
-                                        </picture>
-                                        <div class="playlists__icon playlists__icon_uk"></div>
-                                        <div class="playlists__btn flex">
-                                            <div></div>
-                                        </div>
-                                    </div>
-                                    <div class="playlists__block-bottom">
-                                        <h4 class="title-h4 playlists__h4">Joy Division</h4>
-                                        <p class="playlists__text">Лучшее за всё время</p>
-                                    </div>
-                                </li>
-                                <li class="playlists__item flex">
-                                    <button class="btn-reset playlists__card" aria-label="Плейлист The Cure"></button>
-                                    <div class="playlists__block-top">
-                                        <picture class="playlists__img flex">
-                                            <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_8_320.jpg" media="(max-width: 767px)">
-                                            <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_8_1024.jpg" media="(max-width: 1124px)">
-                                            <img src="https://martaveresk.github.io/W-Wave/img/playlists_8.jpg" alt="Фото The Cure">
-                                        </picture>
-                                        <div class="playlists__icon playlists__icon_uk"></div>
-                                        <div class="playlists__btn flex">
-                                            <div></div>
-                                        </div>
-                                    </div>
-                                    <div class="playlists__block-bottom">
-                                        <h4 class="title-h4 playlists__h4">The Cure</h4>
-                                        <p class="playlists__text">Лучшее за всё время</p>
-                                    </div>
-                                </li>
-                                <li class="playlists__item flex">
-                                    <button class="btn-reset playlists__card" aria-label="Плейлист The Smiths"></button>
-                                    <div class="playlists__block-top">
-                                        <picture class="playlists__img flex">
-                                            <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_9_320.jpg" media="(max-width: 767px)">
-                                            <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_9_1024.jpg" media="(max-width: 1124px)">
-                                            <img src="https://martaveresk.github.io/W-Wave/img/playlists_9.jpg" alt="Фото The Smiths">
-                                        </picture>
-                                        <div class="playlists__icon playlists__icon_uk"></div>
-                                        <div class="playlists__btn flex">
-                                            <div></div>
-                                        </div>
-                                    </div>
-                                    <div class="playlists__block-bottom">
-                                        <h4 class="title-h4 playlists__h4">The Smiths</h4>
-                                        <p class="playlists__text">Период 1984-1988</p>
-                                    </div>
-                                </li>
-                                <li class="playlists__item flex">
-                                    <button class="btn-reset playlists__card" aria-label="Плейлист New Order"></button>
-                                    <div class="playlists__block-top">
-                                        <picture class="playlists__img flex">
-                                            <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_10_320.jpg" media="(max-width: 767px)">
-                                            <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_10_1024.jpg" media="(max-width: 1124px)">
-                                            <img src="https://martaveresk.github.io/W-Wave/img/playlists_10.jpg" alt="Фото New Order">
-                                        </picture>
-                                        <div class="playlists__icon playlists__icon_uk"></div>
-                                        <div class="playlists__btn flex">
-                                            <div></div>
-                                        </div>
-                                    </div>
-                                    <div class="playlists__block-bottom">
-                                        <h4 class="title-h4 playlists__h4">New Order</h4>
-                                        <p class="playlists__text">Хиты</p>
-                                    </div>
-                                </li>
-                                <li class="playlists__item flex">
-                                    <button class="btn-reset playlists__card" aria-label="Плейлист Bauhaus"></button>
-                                    <div class="playlists__block-top">
-                                        <picture class="playlists__img flex">
-                                            <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_11_320.jpg" media="(max-width: 767px)">
-                                            <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_11_1024.jpg" media="(max-width: 1124px)">
-                                            <img src="https://martaveresk.github.io/W-Wave/img/playlists_11.jpg" alt="Фото New Order">
-                                        </picture>
-                                        <div class="playlists__icon playlists__icon_uk"></div>
-                                        <div class="playlists__btn flex">
-                                            <div></div>
-                                        </div>
-                                    </div>
-                                    <div class="playlists__block-bottom">
-                                        <h4 class="title-h4 playlists__h4">Bauhaus</h4>
-                                        <p class="playlists__text">Все синглы</p>
-                                    </div>
-                                </li>
-                                <li class="playlists__item flex">
-                                    <button class="btn-reset playlists__card" aria-label="Плейлист Gang Of Four"></button>
-                                    <div class="playlists__block-top">
-                                        <picture class="playlists__img flex">
-                                            <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_12_320.jpg" media="(max-width: 767px)">
-                                            <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_12_1024.jpg" media="(max-width: 1124px)">
-                                            <img src="https://martaveresk.github.io/W-Wave/img/playlists_12.jpg" alt="Фото Gang Of Four">
-                                        </picture>
-                                        <div class="playlists__icon playlists__icon_uk"></div>
-                                        <div class="playlists__btn flex">
-                                            <div></div>
-                                        </div>
-                                    </div>
-                                    <div class="playlists__block-bottom">
-                                        <h4 class="title-h4 playlists__h4">Gang Of Four</h4>
-                                        <p class="playlists__text">3 последних альбома</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- __________________ -->
-                        <div class="swiper-slide">
-                            <ul class="list playlists__list flex">
-                                <li class="playlists__item flex">
-                                    <button class="btn-reset playlists__card" aria-label="Плейлист Ploho"></button>
-                                    <div class="playlists__block-top">
-                                        <picture class="playlists__img flex">
-                                            <img src="https://martaveresk.github.io/W-Wave/img/playlists_1.jpg" alt="Фото Ploho">
-                                        </picture>
-                                        <div class="playlists__icon playlists__icon_ru"></div>
-                                        <div class="playlists__bgc"></div>
-                                        <div class="playlists__btn flex">
-                                            <div></div>
-                                        </div>
-                                    </div>
-                                    <div class="playlists__block-bottom">
-                                        <h4 class="title-h4 playlists__h4">Ploho</h4>
-                                        <p class="playlists__text">3 последних альбома</p>
-                                    </div>
-                                </li>
-                                <li class="playlists__item flex">
-                                    <button class="btn-reset playlists__card" aria-label="Плейлист Ploho"></button>
-                                    <div class="playlists__block-top">
-                                        <picture class="playlists__img flex">
-                                            <img src="https://martaveresk.github.io/W-Wave/img/playlists_1.jpg" alt="Фото Ploho">
-                                        </picture>
-                                        <div class="playlists__icon playlists__icon_ru"></div>
-                                        <div class="playlists__bgc"></div>
-                                        <div class="playlists__btn flex">
-                                            <div></div>
-                                        </div>
-                                    </div>
-                                    <div class="playlists__block-bottom">
-                                        <h4 class="title-h4 playlists__h4">Ploho</h4>
-                                        <p class="playlists__text">3 последних альбома</p>
-                                    </div>
-                                </li>
-                                <li class="playlists__item flex">
-                                    <button class="btn-reset playlists__card" aria-label="Плейлист Ploho"></button>
-                                    <div class="playlists__block-top">
-                                        <picture class="playlists__img flex">
-                                            <img src="https://martaveresk.github.io/W-Wave/img/playlists_1.jpg" alt="Фото Ploho">
-                                        </picture>
-                                        <div class="playlists__icon playlists__icon_ru"></div>
-                                        <div class="playlists__bgc"></div>
-                                        <div class="playlists__btn flex">
-                                            <div></div>
-                                        </div>
-                                    </div>
-                                    <div class="playlists__block-bottom">
-                                        <h4 class="title-h4 playlists__h4">Ploho</h4>
-                                        <p class="playlists__text">3 последних альбома</p>
-                                    </div>
-                                </li>
-                                <li class="playlists__item flex">
-                                    <button class="btn-reset playlists__card" aria-label="Плейлист Ploho"></button>
-                                    <div class="playlists__block-top">
-                                        <picture class="playlists__img flex">
-                                            <img src="https://martaveresk.github.io/W-Wave/img/playlists_1.jpg" alt="Фото Ploho">
-                                        </picture>
-                                        <div class="playlists__icon playlists__icon_ru"></div>
-                                        <div class="playlists__bgc"></div>
-                                        <div class="playlists__btn flex">
-                                            <div></div>
-                                        </div>
-                                    </div>
-                                    <div class="playlists__block-bottom">
-                                        <h4 class="title-h4 playlists__h4">Ploho</h4>
-                                        <p class="playlists__text">3 последних альбома</p>
-                                    </div>
-                                </li>
-                                <li class="playlists__item flex">
-                                    <button class="btn-reset playlists__card" aria-label="Плейлист Ploho"></button>
-                                    <div class="playlists__block-top">
-                                        <picture class="playlists__img flex">
-                                            <img src="https://martaveresk.github.io/W-Wave/img/playlists_1.jpg" alt="Фото Ploho">
-                                        </picture>
-                                        <div class="playlists__icon playlists__icon_ru"></div>
-                                        <div class="playlists__bgc"></div>
-                                        <div class="playlists__btn flex">
-                                            <div></div>
-                                        </div>
-                                    </div>
-                                    <div class="playlists__block-bottom">
-                                        <h4 class="title-h4 playlists__h4">Ploho</h4>
-                                        <p class="playlists__text">3 последних альбома</p>
-                                    </div>
-                                </li>
-                                <li class="playlists__item flex">
-                                    <button class="btn-reset playlists__card" aria-label="Плейлист Ploho"></button>
-                                    <div class="playlists__block-top">
-                                        <picture class="playlists__img flex">
-                                            <img src="https://martaveresk.github.io/W-Wave/img/playlists_1.jpg" alt="Фото Ploho">
-                                        </picture>
-                                        <div class="playlists__icon playlists__icon_ru"></div>
-                                        <div class="playlists__bgc"></div>
-                                        <div class="playlists__btn flex">
-                                            <div></div>
-                                        </div>
-                                    </div>
-                                    <div class="playlists__block-bottom">
-                                        <h4 class="title-h4 playlists__h4">Ploho</h4>
-                                        <p class="playlists__text">3 последних альбома</p>
-                                    </div>
-                                </li>
-                            </ul>
                         </div>
                     </div>
-                </div>
 
-                <div class="playlists__footer">
-                    <p class="playlists__descr">Раздел &laquo;Плейлисты&raquo; может содержать информацию, не&nbsp;предназначенную для несовершеннолетних.</p>
-                    <p class="playlists__logo"><i>© 2021 l W-Wave</i> </p>
-                    <span class="playlists__18">18+</span>
+                    <div class="swiper playlists__swiper">
+                        <div class="playlists__swiper-btn flex">
+                            <button class="btn-reset swiper-button-prev playlists__prev" aria-label="К предыдущему слайду"></button>
+                            <div class="swiper-pagination playlists__pag"></div>
+                            <button class="btn-reset swiper-button-next playlists__next" aria-label="К следующему слайду"></button>
+                        </div>
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper playlists__swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <ul class="list playlists__list flex">
+                                    <!-- _______________________________________ -->
+                                    <li class="playlists__item flex">
+                                        <button class="btn-reset playlists__card" aria-label="Плейлист Ploho"></button>
+                                        <div class="playlists__block-top">
+                                            <picture class="playlists__img flex">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_1_320.jpg" media="(max-width: 767px)">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_1_1024.jpg" media="(max-width: 1124px)">
+                                                <img src="https://martaveresk.github.io/W-Wave/img/playlists_1.jpg" alt="Фото Ploho">
+                                            </picture>
+                                            <div class="playlists__icon playlists__icon_ru"></div>
+                                            <div class="playlists__btn flex">
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                        <div class="playlists__block-bottom">
+                                            <h4 class="title-h4 playlists__h4">Ploho</h4>
+                                            <p class="playlists__text">3 последних альбома</p>
+                                        </div>
+                                    </li>
+                                    <li class="playlists__item flex">
+                                        <button class="btn-reset playlists__card" aria-label="Плейлист Molchat Doma"></button>
+                                        <div class="playlists__block-top">
+                                            <picture class="playlists__img flex">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_2_320.jpg" media="(max-width: 767px)">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_2_1024.jpg" media="(max-width: 1124px)">
+                                                <img src="https://martaveresk.github.io/W-Wave/img/playlists_2.jpg" alt="Фото Molchat Doma">
+                                            </picture>
+                                            <div class="playlists__icon playlists__icon_ru"></div>
+                                            <div class="playlists__btn flex">
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                        <div class="playlists__block-bottom">
+                                            <h4 class="title-h4 playlists__h4">Molchat Doma</h4>
+                                            <p class="playlists__text">Все песни</p>
+                                        </div>
+                                    </li>
+                                    <li class="playlists__item flex">
+                                        <button class="btn-reset playlists__card" aria-label="Плейлист Motorama"></button>
+                                        <div class="playlists__block-top">
+                                            <picture class="playlists__img flex">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_3_320.jpg" media="(max-width: 767px)">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_3_1024.jpg" media="(max-width: 1124px)">
+                                                <img src="https://martaveresk.github.io/W-Wave/img/playlists_3.jpg" alt="Фото Motorama">
+                                            </picture>
+                                            <div class="playlists__icon playlists__icon_ru"></div>
+                                            <div class="playlists__btn flex">
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                        <div class="playlists__block-bottom">
+                                            <h4 class="title-h4 playlists__h4">Motorama</h4>
+                                            <p class="playlists__text">Все песни</p>
+                                        </div>
+                                    </li>
+                                    <li class="playlists__item flex">
+                                        <button class="btn-reset playlists__card" aria-label="Плейлист Human Tetris"></button>
+                                        <div class="playlists__block-top">
+                                            <picture class="playlists__img flex">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_4_320.jpg" media="(max-width: 767px)">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_4_1024.jpg" media="(max-width: 1124px)">
+                                                <img src="https://martaveresk.github.io/W-Wave/img/playlists_4.jpg" alt="Фото Human Tetris">
+                                            </picture>
+                                            <div class="playlists__icon playlists__icon_ru"></div>
+                                            <div class="playlists__btn flex">
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                        <div class="playlists__block-bottom">
+                                            <h4 class="title-h4 playlists__h4">Human Tetris</h4>
+                                            <p class="playlists__text">Лучшее за всё время</p>
+                                        </div>
+                                    </li>
+                                    <li class="playlists__item flex">
+                                        <button class="btn-reset playlists__card" aria-label="Плейлист Буерак"></button>
+                                        <div class="playlists__block-top">
+                                            <picture class="playlists__img flex">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_5_320.jpg" media="(max-width: 767px)">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_5_1024.jpg" media="(max-width: 1124px)">
+                                                <img src="https://martaveresk.github.io/W-Wave/img/playlists_5.jpg" alt="Фото Буерак">
+                                            </picture>
+                                            <div class="playlists__icon playlists__icon_ru"></div>
+                                            <div class="playlists__btn flex">
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                        <div class="playlists__block-bottom">
+                                            <h4 class="title-h4 playlists__h4">Буерак</h4>
+                                            <p class="playlists__text">Все EP</p>
+                                        </div>
+                                    </li>
+                                    <li class="playlists__item flex">
+                                        <button class="btn-reset playlists__card" aria-label="Плейлист Июльские Дни"></button>
+                                        <div class="playlists__block-top">
+                                            <picture class="playlists__img flex">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_6_320.jpg" media="(max-width: 767px)">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_6_1024.jpg" media="(max-width: 1124px)">
+                                                <img src="https://martaveresk.github.io/W-Wave/img/playlists_6.jpg" alt="Фото Июльские Дни">
+                                            </picture>
+                                            <div class="playlists__icon playlists__icon_ru"></div>
+                                            <div class="playlists__btn flex">
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                        <div class="playlists__block-bottom">
+                                            <h4 class="title-h4 playlists__h4">Июльские Дни</h4>
+                                            <p class="playlists__text">Альбом «Колокол»</p>
+                                        </div>
+                                    </li>
+                                    <li class="playlists__item flex">
+                                        <button class="btn-reset playlists__card" aria-label="Плейлист Joy Division"></button>
+                                        <div class="playlists__block-top">
+                                            <picture class="playlists__img flex">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_7_320.jpg" media="(max-width: 767px)">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_7_1024.jpg" media="(max-width: 1124px)">
+                                                <img src="https://martaveresk.github.io/W-Wave/img/playlists_7.jpg" alt="Фото Joy Division">
+                                            </picture>
+                                            <div class="playlists__icon playlists__icon_uk"></div>
+                                            <div class="playlists__btn flex">
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                        <div class="playlists__block-bottom">
+                                            <h4 class="title-h4 playlists__h4">Joy Division</h4>
+                                            <p class="playlists__text">Лучшее за всё время</p>
+                                        </div>
+                                    </li>
+                                    <li class="playlists__item flex">
+                                        <button class="btn-reset playlists__card" aria-label="Плейлист The Cure"></button>
+                                        <div class="playlists__block-top">
+                                            <picture class="playlists__img flex">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_8_320.jpg" media="(max-width: 767px)">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_8_1024.jpg" media="(max-width: 1124px)">
+                                                <img src="https://martaveresk.github.io/W-Wave/img/playlists_8.jpg" alt="Фото The Cure">
+                                            </picture>
+                                            <div class="playlists__icon playlists__icon_uk"></div>
+                                            <div class="playlists__btn flex">
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                        <div class="playlists__block-bottom">
+                                            <h4 class="title-h4 playlists__h4">The Cure</h4>
+                                            <p class="playlists__text">Лучшее за всё время</p>
+                                        </div>
+                                    </li>
+                                    <li class="playlists__item flex">
+                                        <button class="btn-reset playlists__card" aria-label="Плейлист The Smiths"></button>
+                                        <div class="playlists__block-top">
+                                            <picture class="playlists__img flex">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_9_320.jpg" media="(max-width: 767px)">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_9_1024.jpg" media="(max-width: 1124px)">
+                                                <img src="https://martaveresk.github.io/W-Wave/img/playlists_9.jpg" alt="Фото The Smiths">
+                                            </picture>
+                                            <div class="playlists__icon playlists__icon_uk"></div>
+                                            <div class="playlists__btn flex">
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                        <div class="playlists__block-bottom">
+                                            <h4 class="title-h4 playlists__h4">The Smiths</h4>
+                                            <p class="playlists__text">Период 1984-1988</p>
+                                        </div>
+                                    </li>
+                                    <li class="playlists__item flex">
+                                        <button class="btn-reset playlists__card" aria-label="Плейлист New Order"></button>
+                                        <div class="playlists__block-top">
+                                            <picture class="playlists__img flex">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_10_320.jpg" media="(max-width: 767px)">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_10_1024.jpg" media="(max-width: 1124px)">
+                                                <img src="https://martaveresk.github.io/W-Wave/img/playlists_10.jpg" alt="Фото New Order">
+                                            </picture>
+                                            <div class="playlists__icon playlists__icon_uk"></div>
+                                            <div class="playlists__btn flex">
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                        <div class="playlists__block-bottom">
+                                            <h4 class="title-h4 playlists__h4">New Order</h4>
+                                            <p class="playlists__text">Хиты</p>
+                                        </div>
+                                    </li>
+                                    <li class="playlists__item flex">
+                                        <button class="btn-reset playlists__card" aria-label="Плейлист Bauhaus"></button>
+                                        <div class="playlists__block-top">
+                                            <picture class="playlists__img flex">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_11_320.jpg" media="(max-width: 767px)">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_11_1024.jpg" media="(max-width: 1124px)">
+                                                <img src="https://martaveresk.github.io/W-Wave/img/playlists_11.jpg" alt="Фото New Order">
+                                            </picture>
+                                            <div class="playlists__icon playlists__icon_uk"></div>
+                                            <div class="playlists__btn flex">
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                        <div class="playlists__block-bottom">
+                                            <h4 class="title-h4 playlists__h4">Bauhaus</h4>
+                                            <p class="playlists__text">Все синглы</p>
+                                        </div>
+                                    </li>
+                                    <li class="playlists__item flex">
+                                        <button class="btn-reset playlists__card" aria-label="Плейлист Gang Of Four"></button>
+                                        <div class="playlists__block-top">
+                                            <picture class="playlists__img flex">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_12_320.jpg" media="(max-width: 767px)">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_12_1024.jpg" media="(max-width: 1124px)">
+                                                <img src="https://martaveresk.github.io/W-Wave/img/playlists_12.jpg" alt="Фото Gang Of Four">
+                                            </picture>
+                                            <div class="playlists__icon playlists__icon_uk"></div>
+                                            <div class="playlists__btn flex">
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                        <div class="playlists__block-bottom">
+                                            <h4 class="title-h4 playlists__h4">Gang Of Four</h4>
+                                            <p class="playlists__text">3 последних альбома</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- __________________ -->
+                            <div class="swiper-slide">
+                                <ul class="list playlists__list flex">
+                                    <li class="playlists__item flex">
+                                        <button class="btn-reset playlists__card" aria-label="Плейлист Ploho"></button>
+                                        <div class="playlists__block-top">
+                                            <picture class="playlists__img flex">
+                                                <img src="https://martaveresk.github.io/W-Wave/img/playlists_1.jpg" alt="Фото Ploho">
+                                            </picture>
+                                            <div class="playlists__icon playlists__icon_ru"></div>
+                                            <div class="playlists__bgc"></div>
+                                            <div class="playlists__btn flex">
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                        <div class="playlists__block-bottom">
+                                            <h4 class="title-h4 playlists__h4">Ploho</h4>
+                                            <p class="playlists__text">3 последних альбома</p>
+                                        </div>
+                                    </li>
+                                    <li class="playlists__item flex">
+                                        <button class="btn-reset playlists__card" aria-label="Плейлист Ploho"></button>
+                                        <div class="playlists__block-top">
+                                            <picture class="playlists__img flex">
+                                                <img src="https://martaveresk.github.io/W-Wave/img/playlists_1.jpg" alt="Фото Ploho">
+                                            </picture>
+                                            <div class="playlists__icon playlists__icon_ru"></div>
+                                            <div class="playlists__bgc"></div>
+                                            <div class="playlists__btn flex">
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                        <div class="playlists__block-bottom">
+                                            <h4 class="title-h4 playlists__h4">Ploho</h4>
+                                            <p class="playlists__text">3 последних альбома</p>
+                                        </div>
+                                    </li>
+                                    <li class="playlists__item flex">
+                                        <button class="btn-reset playlists__card" aria-label="Плейлист Ploho"></button>
+                                        <div class="playlists__block-top">
+                                            <picture class="playlists__img flex">
+                                                <img src="https://martaveresk.github.io/W-Wave/img/playlists_1.jpg" alt="Фото Ploho">
+                                            </picture>
+                                            <div class="playlists__icon playlists__icon_ru"></div>
+                                            <div class="playlists__bgc"></div>
+                                            <div class="playlists__btn flex">
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                        <div class="playlists__block-bottom">
+                                            <h4 class="title-h4 playlists__h4">Ploho</h4>
+                                            <p class="playlists__text">3 последних альбома</p>
+                                        </div>
+                                    </li>
+                                    <li class="playlists__item flex">
+                                        <button class="btn-reset playlists__card" aria-label="Плейлист Ploho"></button>
+                                        <div class="playlists__block-top">
+                                            <picture class="playlists__img flex">
+                                                <img src="https://martaveresk.github.io/W-Wave/img/playlists_1.jpg" alt="Фото Ploho">
+                                            </picture>
+                                            <div class="playlists__icon playlists__icon_ru"></div>
+                                            <div class="playlists__bgc"></div>
+                                            <div class="playlists__btn flex">
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                        <div class="playlists__block-bottom">
+                                            <h4 class="title-h4 playlists__h4">Ploho</h4>
+                                            <p class="playlists__text">3 последних альбома</p>
+                                        </div>
+                                    </li>
+                                    <li class="playlists__item flex">
+                                        <button class="btn-reset playlists__card" aria-label="Плейлист Ploho"></button>
+                                        <div class="playlists__block-top">
+                                            <picture class="playlists__img flex">
+                                                <img src="https://martaveresk.github.io/W-Wave/img/playlists_1.jpg" alt="Фото Ploho">
+                                            </picture>
+                                            <div class="playlists__icon playlists__icon_ru"></div>
+                                            <div class="playlists__bgc"></div>
+                                            <div class="playlists__btn flex">
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                        <div class="playlists__block-bottom">
+                                            <h4 class="title-h4 playlists__h4">Ploho</h4>
+                                            <p class="playlists__text">3 последних альбома</p>
+                                        </div>
+                                    </li>
+                                    <li class="playlists__item flex">
+                                        <button class="btn-reset playlists__card" aria-label="Плейлист Ploho"></button>
+                                        <div class="playlists__block-top">
+                                            <picture class="playlists__img flex">
+                                                <img src="https://martaveresk.github.io/W-Wave/img/playlists_1.jpg" alt="Фото Ploho">
+                                            </picture>
+                                            <div class="playlists__icon playlists__icon_ru"></div>
+                                            <div class="playlists__bgc"></div>
+                                            <div class="playlists__btn flex">
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                        <div class="playlists__block-bottom">
+                                            <h4 class="title-h4 playlists__h4">Ploho</h4>
+                                            <p class="playlists__text">3 последних альбома</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="playlists__footer">
+                        <p class="playlists__descr">Раздел &laquo;Плейлисты&raquo; может содержать информацию, не&nbsp;предназначенную для несовершеннолетних.</p>
+                        <p class="playlists__logo"><i>© 2021 l W-Wave</i> </p>
+                        <span class="playlists__18">18+</span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- ________________________________________adv_____________________________________________ -->
-    <section class="advan" id="advan">
-        <div class="container container_padding advan__container">
-            <div class="advan__block flex">
-                <div class="advan__swiper" aria-label="Радиоприемник" tabindex="1">
-                    <div class="swiper-container advan__swiper1">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide advan__pic">
-                                <picture>
-                                    <img class="advan__img" src="https://martaveresk.github.io/W-Wave/img/advan_1x.png" alt="Радиоприемник W-Wave бордовый">
-                                </picture>
-                            </div>
-                            <div class="swiper-slide advan__pic">
-                                <picture>
-                                    <img class="advan__img" src="https://martaveresk.github.io/W-Wave/img/advan_1x.png" alt="Радиоприемник W-Wave сине-зелёный">
-                                </picture>
-                            </div>
-                            <div class="swiper-slide advan__pic">
-                                <picture>
-                                    <img class="advan__img" src="https://martaveresk.github.io/W-Wave/img/advan_1x.png" alt="Радиоприемник W-Wave зелёный">
-                                </picture>
+        </section>
+        <!-- ________________________________________adv_____________________________________________ -->
+        <section class="advan" id="advan">
+            <div class="container container_padding advan__container">
+                <div class="advan__block flex">
+                    <div class="advan__swiper" aria-label="Радиоприемник" tabindex="1">
+                        <div class="swiper-container advan__swiper1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide advan__pic">
+                                    <picture>
+                                        <img class="advan__img" src="https://martaveresk.github.io/W-Wave/img/advan_1x.png" alt="Радиоприемник W-Wave бордовый">
+                                    </picture>
+                                </div>
+                                <div class="swiper-slide advan__pic">
+                                    <picture>
+                                        <img class="advan__img" src="https://martaveresk.github.io/W-Wave/img/advan_1x.png" alt="Радиоприемник W-Wave сине-зелёный">
+                                    </picture>
+                                </div>
+                                <div class="swiper-slide advan__pic">
+                                    <picture>
+                                        <img class="advan__img" src="https://martaveresk.github.io/W-Wave/img/advan_1x.png" alt="Радиоприемник W-Wave зелёный">
+                                    </picture>
+                                </div>
                             </div>
                         </div>
+                        <div class="advan__nav">
+                            <div class="adv__bullet"></div>
+                            <div class="swiper-pagination advan__pag"></div>
+                        </div>
                     </div>
-                    <div class="advan__nav">
-                        <div class="adv__bullet"></div>
-                        <div class="swiper-pagination advan__pag"></div>
-                    </div>
-                </div>
 
-                <div class="advan__card">
-                    <h2 class="title-h2 advan__title">Будь с нами на одной волне!</h2>
-                    <p class="advan__text1">Друзья, рады представить вам продукт нашего производства! Да-да, несмотря на&nbsp;то, что мы&nbsp;только начали свой путь радиовещателей, нам хочется, чтобы вы&nbsp;могли как следует нас расслышать :):</p>
-                    <p class="advan__text2">Итак, встречайте! Портативный радиоприёмник-колонка <span class="advan__mark">W-Wave 1.0&nbsp;xm.</span> Тщательный подбор всех делатей, ручная сборка, качественный звук. Пока доступно только 60&nbsp;штук в&nbsp;3&nbsp;цветах, но&nbsp;мы&nbsp;активно
-                        трудимся над новыми партиями и&nbsp;дизайном. Спешите приобрести!</p>
-                    <p class="advan__value">2800 руб</p>
-                    <button class="btn-reset advan__btn flex modal-btn" data-path="adv-popup">
+                    <div class="advan__card">
+                        <h2 class="title-h2 advan__title">Будь с нами на одной волне!</h2>
+                        <p class="advan__text1">Друзья, рады представить вам продукт нашего производства! Да-да, несмотря на&nbsp;то, что мы&nbsp;только начали свой путь радиовещателей, нам хочется, чтобы вы&nbsp;могли как следует нас расслышать :):</p>
+                        <p class="advan__text2">Итак, встречайте! Портативный радиоприёмник-колонка <span class="advan__mark">W-Wave 1.0&nbsp;xm.</span> Тщательный подбор всех делатей, ручная сборка, качественный звук. Пока доступно только 60&nbsp;штук в&nbsp;3&nbsp;цветах,
+                            но&nbsp;мы&nbsp;активно трудимся над новыми партиями и&nbsp;дизайном. Спешите приобрести!</p>
+                        <p class="advan__value">2800 руб</p>
+                        <button class="btn-reset advan__btn flex modal-btn" data-path="adv-popup">
                         <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_6567_1514)">
                             <path class="advan__path1" d="M10.5 20C16.0228 20 20.5 15.5228 20.5 9.99998C20.5 4.47714 16.0228 0 10.5 0C4.97724 0 0.5 4.47714 0.5 9.99998C0.5 15.5228 4.97724 20 10.5 20Z" fill="#F0D288"></path>
@@ -1561,87 +1564,88 @@
                             </svg>
                             Купить&nbsp;на&nbsp;Яндекс.Маркет 
                     </button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- ________________________________________about_____________________________________________ -->
-    <section class="about" id="about">
-        <div class="container container_padding about__container">
-            <div class="about__block">
-                <h2 class="title-h2 about__title">О нас</h2>
-                <p class="about__subtitle">Приём-приём! Как слышно? Мы&nbsp;уже в&nbsp;эфире? Отлично, поехали!</p>
-                <p class="about__subtext">Друзья, мы&nbsp;будем очень рады, если вы&nbsp;поможете стать нам лучше. Нам важен каждый слушатель, поэтому вы&nbsp;можете поделиться обратной связью о&nbsp;наших предеачах, темах, подборках и&nbsp;вообще обо всём! Это можно сделать либо
-                    написав нам в&nbsp;форме ниже, либо кликнув на&nbsp;наши соцсети в&nbsp;подвале сайта. Спасибо! Услышимся! :)</p>
-            </div>
-            <ul class="list about__list flex">
-                <li class="about__item">
-                    <picture class="about__img flex">
-                        <source srcset="https://martaveresk.github.io/W-Wave/img/about_1_320.jpg" media="(max-width: 500px)">
-                        <source srcset="https://martaveresk.github.io/W-Wave/img/about_1.jpg" media="(max-width: 1023px)">
-                        <source srcset="https://martaveresk.github.io/W-Wave/img/about_1_1024.jpg" media="(max-width: 1200px)">
-                        <img src="https://martaveresk.github.io/W-Wave/img/about_1.jpg" alt="Фото Дмитрия Гутенберга">
-                    </picture>
-                    <h4 class="title-h3 about__h3">Дмитрий Гутенберг</h4>
-                    <p class="about__text">Эксперт (ну, почти) по&nbsp;всем вопросам (почти).</p>
-                </li>
-                <li class="about__item">
-                    <picture class="about__img flex">
-                        <source srcset="https://martaveresk.github.io/W-Wave/img/about_2_320.jpg" media="(max-width: 500px)">
-                        <source srcset="https://martaveresk.github.io/W-Wave/img/about_2.jpg" media="(max-width: 1023px)">
-                        <source srcset="https://martaveresk.github.io/W-Wave/img/about_2_1024.jpg" media="(max-width: 1200px)">
-                        <img src="https://martaveresk.github.io/W-Wave/img/about_2.jpg" alt="Фото Дмитрия Гутенберга">
-                    </picture>
-                    <h4 class="title-h3 about__h3">Анна Васильева</h4>
-                    <p class="about__text">Как я&nbsp;здесь оказалась? А&nbsp;главное&nbsp;&mdash; зачем?</p>
-                </li>
-                <li class="about__item">
-                    <picture class="about__img flex">
-                        <source srcset="https://martaveresk.github.io/W-Wave/img/about_3_320.jpg" media="(max-width: 500px)">
-                        <source srcset="https://martaveresk.github.io/W-Wave/img/about_3.jpg" media="(max-width: 1023px)">
-                        <source srcset="https://martaveresk.github.io/W-Wave/img/about_3_1024.jpg" media="(max-width: 1200px)">
-                        <img src="https://martaveresk.github.io/W-Wave/img/about_3.jpg" alt="Фото Дмитрия Гутенберга">
-                    </picture>
-                    <h4 class="title-h3 about__h3">Пётр Дмитриевский</h4>
-                    <p class="about__text">Господа! Внимание!! Благодарю за&nbsp;внимание!!!</p>
-                </li>
-                <li class="about__item">
-                    <picture class="about__img flex">
-                        <source srcset="https://martaveresk.github.io/W-Wave/img/about_4_320.jpg" media="(max-width: 500px)">
-                        <source srcset="https://martaveresk.github.io/W-Wave/img/about_4.jpg" media="(max-width: 1023px)">
-                        <source srcset="https://martaveresk.github.io/W-Wave/img/about_4_1024.jpg" media="(max-width: 1200px)">
-                        <img src="https://martaveresk.github.io/W-Wave/img/about_4.jpg" alt="Фото Дмитрия Гутенберга">
-                    </picture>
-                    <h4 class="title-h3 about__h3">Татьяна Флеганова</h4>
-                    <p class="about__text">Одна я&nbsp;в&nbsp;пальто стою красивая, а&nbsp;вокруг...</p>
-                </li>
-            </ul>
+        </section>
+        <!-- ________________________________________about_____________________________________________ -->
+        <section class="about" id="about">
+            <div class="container container_padding about__container">
+                <div class="about__block">
+                    <h2 class="title-h2 about__title">О нас</h2>
+                    <p class="about__subtitle">Приём-приём! Как слышно? Мы&nbsp;уже в&nbsp;эфире? Отлично, поехали!</p>
+                    <p class="about__subtext">Друзья, мы&nbsp;будем очень рады, если вы&nbsp;поможете стать нам лучше. Нам важен каждый слушатель, поэтому вы&nbsp;можете поделиться обратной связью о&nbsp;наших предеачах, темах, подборках и&nbsp;вообще обо всём! Это можно сделать
+                        либо написав нам в&nbsp;форме ниже, либо кликнув на&nbsp;наши соцсети в&nbsp;подвале сайта. Спасибо! Услышимся! :)</p>
+                </div>
+                <ul class="list about__list flex">
+                    <li class="about__item">
+                        <picture class="about__img flex">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/about_1_320.jpg" media="(max-width: 500px)">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/about_1.jpg" media="(max-width: 1023px)">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/about_1_1024.jpg" media="(max-width: 1200px)">
+                            <img src="https://martaveresk.github.io/W-Wave/img/about_1.jpg" alt="Фото Дмитрия Гутенберга">
+                        </picture>
+                        <h4 class="title-h3 about__h3">Дмитрий Гутенберг</h4>
+                        <p class="about__text">Эксперт (ну, почти) по&nbsp;всем вопросам (почти).</p>
+                    </li>
+                    <li class="about__item">
+                        <picture class="about__img flex">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/about_2_320.jpg" media="(max-width: 500px)">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/about_2.jpg" media="(max-width: 1023px)">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/about_2_1024.jpg" media="(max-width: 1200px)">
+                            <img src="https://martaveresk.github.io/W-Wave/img/about_2.jpg" alt="Фото Дмитрия Гутенберга">
+                        </picture>
+                        <h4 class="title-h3 about__h3">Анна Васильева</h4>
+                        <p class="about__text">Как я&nbsp;здесь оказалась? А&nbsp;главное&nbsp;&mdash; зачем?</p>
+                    </li>
+                    <li class="about__item">
+                        <picture class="about__img flex">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/about_3_320.jpg" media="(max-width: 500px)">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/about_3.jpg" media="(max-width: 1023px)">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/about_3_1024.jpg" media="(max-width: 1200px)">
+                            <img src="https://martaveresk.github.io/W-Wave/img/about_3.jpg" alt="Фото Дмитрия Гутенберга">
+                        </picture>
+                        <h4 class="title-h3 about__h3">Пётр Дмитриевский</h4>
+                        <p class="about__text">Господа! Внимание!! Благодарю за&nbsp;внимание!!!</p>
+                    </li>
+                    <li class="about__item">
+                        <picture class="about__img flex">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/about_4_320.jpg" media="(max-width: 500px)">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/about_4.jpg" media="(max-width: 1023px)">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/about_4_1024.jpg" media="(max-width: 1200px)">
+                            <img src="https://martaveresk.github.io/W-Wave/img/about_4.jpg" alt="Фото Дмитрия Гутенберга">
+                        </picture>
+                        <h4 class="title-h3 about__h3">Татьяна Флеганова</h4>
+                        <p class="about__text">Одна я&nbsp;в&nbsp;пальто стою красивая, а&nbsp;вокруг...</p>
+                    </li>
+                </ul>
 
-            <form class="about__form text-20" id="about-form" action="https://jsonplaceholder.typicode.com/posts" method="post" autocomplete="off">
-                <fieldset class="input-fieldset">
-                    <label class="input-label" aria-label=" " tabindex="-1">
+                <form class="about__form text-20" id="about-form" action="https://jsonplaceholder.typicode.com/posts" method="post" autocomplete="off">
+                    <fieldset class="input-fieldset">
+                        <label class="input-label" aria-label=" " tabindex="-1">
                         <textarea class="input about__input about__textarea" id="message" name="Сообщение" cols="70" rows="4" placeholder="Что скажете?" onclick="deleteError(this)" autocomplete="off"></textarea>
                         <span class="input-error" tabindex="-1">Ошибка</span>
                     </label>
-                    <label class="input-label about__label_" aria-label=" " tabindex="-1">
+                        <label class="input-label about__label_" aria-label=" " tabindex="-1">
                             <input class="input about__input about__input_name" id="about_name" type="text" name="name" placeholder="Имя" onclick="deleteError(this)" autocomplete="off">
                             <span class="input-error" tabindex="-1">Ошибка</span>
                     </label>
-                    <label class="input-label about__label_" aria-label=" " tabindex="-1">
+                        <label class="input-label about__label_" aria-label=" " tabindex="-1">
                             <input class="input about__input about__input_email" id="about_email" type="text" name="email" placeholder="E-mail" onclick="deleteError(this)" autocomplete="off">
                             <span class="input-error" tabindex="-1">Ошибка</span>
                     </label>
-                    <button class="about__btn btn-reset btn-theme2" id="about_submit" type="submit">Отправить</button>
-                    <label class="about__label">
+                        <button class="about__btn btn-reset btn-theme2" id="about_submit" type="submit">Отправить</button>
+                        <label class="about__label">
                         <input class="about__checkbox" id="checkbox" type="checkbox" name="check1" onclick="deleteError(this)" checked>
                         <span class="about__check-img"></span>
                             Согласен на обработку персональных данных
                     </label>
-                </fieldset>
-            </form>
+                    </fieldset>
+                </form>
 
-        </div>
-    </section>
+            </div>
+        </section>
+    </main>
     <!-- ________________________________________footer_____________________________________________ -->
     <footer class="footer" id="footer">
         <div class="footer__container-top">
