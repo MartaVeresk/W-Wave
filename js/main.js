@@ -113,8 +113,9 @@ window.addEventListener('DOMContentLoaded', function() {
     })
 
     document.querySelector(".header__block-320").addEventListener("click", function() {
-        this.classList.toggle("js_active");
-        document.querySelector(".header__block").classList.toggle("js_active");
-    })
-
+            this.classList.toggle("js_active");
+            document.querySelector(".header__block").classList.toggle("js_active");
+        })
+        // отложенная загрузка изображений
+    lazyload();
 })

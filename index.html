@@ -6,6 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>W-Wave</title>
+    <link rel="preload" href="fonts/MullerBold.woff" as="font">
+    <link rel="preload" href="fonts/MullerBold.woff2" as="font">
+    <link rel="preload" href="fonts/MullerLightItalic.woff" as="font">
+    <link rel="preload" href="fonts/MullerLightItalic.woff2" as="font">
+    <link rel="preload" href="fonts/MullerMedium.woff" as="font">
+    <link rel="preload" href="fonts/MullerMedium.woff2" as="font">
+    <link rel="preload" href="fonts/MullerRegular.woff" as="font">
+    <link rel="preload" href="fonts/MullerRegular.woff2" as="font">
+    <link rel="preload" href="fonts/MullerRegularItalic.woff" as="font">
+    <link rel="preload" href="fonts/MullerRegularItalic.woff2" as="font">
+    <link rel="preload" href="fonts/OpenSans-Regular.woff" as="font">
+    <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font">
     <link href="img/favicon.svg" rel="shortcut icon" type="image/svg">
 
     <link href="css/normalize.css" rel="stylesheet">
@@ -13,19 +25,20 @@
     <link href="./libs/simplebar.css" rel="stylesheet">
     <link href="./libs/swiper-bundle.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <!-- select + script в main.js-->
-    <script src="./libs/choices.min.js" defer></script>
-    <!-- accordeon -->
-    <script src="./libs/accordion.js" defer></script>
-    <!-- scroll -->
-    <script src="./libs/simplebar.min.js" defer></script>
-    <!-- swiper -->
-    <script src="./libs/swiper-bundle.min.js" defer></script>
 
-    <script src="./js/main.js" defer></script>
-    <script src="./js/validate.js" defer></script>
-    <script src="./js/modal.js" defer></script>
-    <script src="./js/slider.js" defer></script>
+    <!-- select + script в main.js-->
+    <script defer src="./libs/choices.min.js"></script>
+    <!-- accordeon -->
+    <script defer src="./libs/accordion.js"></script>
+    <!-- scroll -->
+    <script defer src="./libs/simplebar.min.js"></script>
+    <!-- swiper -->
+    <script defer src="./libs/swiper-bundle.min.js"></script>
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/validate.js"></script>
+    <script defer src="./js/modal.js"></script>
+    <script defer src="./js/slider.js"></script>
+    <script src="./libs/lazyload.min.js"></script>
 </head>
 
 <body>
@@ -36,8 +49,8 @@
             <div class="container header__container-top flex">
                 <a class="flex">
                     <picture class="flex">
-                        <source srcset="https://martaveresk.github.io/W-Wave/img/header_logo_320.png" media="(max-width: 660px)">
-                        <img class="header__logo" src="https://martaveresk.github.io/W-Wave/img/header_logo.png" alt="Лого W-Wave">
+                        <source srcset="https://martaveresk.github.io/W-Wave/img/header_logo_320.webp" media="(max-width: 660px)">
+                        <img class="header__logo" src="https://martaveresk.github.io/W-Wave/img/header_logo.webp" alt="Лого W-Wave">
                     </picture>
                 </a>
                 <button class="btn-reset header__burger burger" aria-label="Меню"><span></span></button>
@@ -154,8 +167,8 @@
                     <!-- 1 -->
                     <li class="list podcasts__item flex">
                         <picture class="podcasts__img flex">
-                            <source srcset="https://martaveresk.github.io/W-Wave/img/podcast_1_320.jpg" media="(max-width: 500px)">
-                            <img src="https://martaveresk.github.io/W-Wave/img/podcast_1.jpg" alt="Фото города">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/podcast_1_320.webp" media="(max-width: 500px)">
+                            <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/podcast_1.webp" alt="Фото города">
                         </picture>
                         <span class="podcasts__data">14 июня</span>
                         <div class="podcasts__card">
@@ -201,8 +214,8 @@
                     <!-- 2 -->
                     <li class="list podcasts__item flex">
                         <picture class="podcasts__img flex">
-                            <source srcset="https://martaveresk.github.io/W-Wave/img/podcast_2_320.jpg" media="(max-width: 500px)">
-                            <img src="https://martaveresk.github.io/W-Wave/img/podcast_2.jpg" alt="Фото скрипача">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/podcast_2_320.webp" media="(max-width: 500px)">
+                            <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/podcast_2.webp" alt="Фото скрипача">
                         </picture>
                         <span class="podcasts__data">11 июня</span>
                         <div class="podcasts__card">
@@ -248,8 +261,8 @@
                     <!-- 3 -->
                     <li class="list podcasts__item flex">
                         <picture class="podcasts__img flex">
-                            <source srcset="https://martaveresk.github.io/W-Wave/img/podcast_3_320.jpg" media="(max-width: 500px)">
-                            <img src="https://martaveresk.github.io/W-Wave/img/podcast_3.jpg" alt="Фото толпы">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/podcast_3_320.webp" media="(max-width: 500px)">
+                            <img class="lazyload" data-data-src="https://martaveresk.github.io/W-Wave/img/podcast_3.webp" alt="Фото толпы">
                         </picture>
                         <span class="podcasts__data">8 июня</span>
                         <div class="podcasts__card">
@@ -295,8 +308,8 @@
                     <!-- 4 -->
                     <li class="list podcasts__item flex">
                         <picture class="podcasts__img flex">
-                            <source srcset="https://martaveresk.github.io/W-Wave/img/podcast_4_320.jpg" media="(max-width: 500px)">
-                            <img src="https://martaveresk.github.io/W-Wave/img/podcast_4.jpg" alt="Фото африканской женщины">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/podcast_4_320.webp" media="(max-width: 500px)">
+                            <img class="lazyload" data-data-src="https://martaveresk.github.io/W-Wave/img/podcast_4.webp" alt="Фото африканской женщины">
                         </picture>
                         <span class="podcasts__data">5 июня</span>
                         <div class="podcasts__card">
@@ -342,7 +355,7 @@
                     <!-- 5 -->
                     <li class="list podcasts__item flex podcasts__hidden-320">
                         <picture class="podcasts__img flex">
-                            <img src="https://martaveresk.github.io/W-Wave/img/podcast_5.jpg" alt="Фото скульптуры">
+                            <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/podcast_5.webp" alt="Фото скульптуры">
                         </picture>
                         <span class="podcasts__data">2 июня</span>
                         <div class="podcasts__card">
@@ -388,7 +401,7 @@
                     <!-- 6 -->
                     <li class="list podcasts__item flex podcasts__hidden-320">
                         <picture class="podcasts__img flex">
-                            <img src="https://martaveresk.github.io/W-Wave/img/podcast_6.jpg" alt="Фото цветового круга">
+                            <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/podcast_6.webp" alt="Фото цветового круга">
                         </picture>
                         <span class="podcasts__data">28 мая</span>
                         <div class="podcasts__card">
@@ -434,7 +447,7 @@
                     <!-- 7 -->
                     <li class="list podcasts__item flex podcasts__hidden-320">
                         <picture class="podcasts__img flex">
-                            <img src="https://martaveresk.github.io/W-Wave/img/podcast_7.jpg" alt="Фото звуковой волны">
+                            <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/podcast_7.webp" alt="Фото звуковой волны">
                         </picture>
                         <span class="podcasts__data">22 мая</span>
                         <div class="podcasts__card">
@@ -480,7 +493,7 @@
                     <!-- 8 -->
                     <li class="list podcasts__item flex podcasts__hidden-320">
                         <picture class="podcasts__img flex">
-                            <img src="https://martaveresk.github.io/W-Wave/img/podcast_8.jpg" alt="Фото обедающих людей">
+                            <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/podcast_8.webp" alt="Фото обедающих людей">
                         </picture>
                         <span class="podcasts__data">18 мая</span>
                         <div class="podcasts__card">
@@ -526,8 +539,8 @@
                     <!-- 4 -->
                     <li class="list podcasts__item flex podcasts__hidden podcasts__hidden-320">
                         <picture class="podcasts__img flex">
-                            <source srcset="https://martaveresk.github.io/W-Wave/img/podcast_4_320.jpg" media="(max-width: 500px)">
-                            <img src="https://martaveresk.github.io/W-Wave/img/podcast_4.jpg" alt="Фото африканской женщины">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/podcast_4_320.webp" media="(max-width: 500px)">
+                            <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/podcast_4.webp" alt="Фото африканской женщины">
                         </picture>
                         <span class="podcasts__data">5 июня</span>
                         <div class="podcasts__card">
@@ -573,8 +586,8 @@
                     <!-- 4 -->
                     <li class="list podcasts__item flex podcasts__hidden podcasts__hidden-320">
                         <picture class="podcasts__img flex">
-                            <source srcset="https://martaveresk.github.io/W-Wave/img/podcast_4_320.jpg" media="(max-width: 500px)">
-                            <img src="https://martaveresk.github.io/W-Wave/img/podcast_4.jpg" alt="Фото африканской женщины">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/podcast_4_320.webp" media="(max-width: 500px)">
+                            <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/podcast_4.webp" alt="Фото африканской женщины">
                         </picture>
                         <span class="podcasts__data">5 июня</span>
                         <div class="podcasts__card">
@@ -620,8 +633,8 @@
                     <!-- 4 -->
                     <li class="list podcasts__item flex podcasts__hidden podcasts__hidden-320">
                         <picture class="podcasts__img flex">
-                            <source srcset="https://martaveresk.github.io/W-Wave/img/podcast_4_320.jpg" media="(max-width: 500px)">
-                            <img src="https://martaveresk.github.io/W-Wave/img/podcast_4.jpg" alt="Фото африканской женщины">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/podcast_4_320.webp" media="(max-width: 500px)">
+                            <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/podcast_4.webp" alt="Фото африканской женщины">
                         </picture>
                         <span class="podcasts__data">5 июня</span>
                         <div class="podcasts__card">
@@ -667,8 +680,8 @@
                     <!-- 4 -->
                     <li class="list podcasts__item flex podcasts__hidden podcasts__hidden-320">
                         <picture class="podcasts__img flex">
-                            <source srcset="https://martaveresk.github.io/W-Wave/img/podcast_4_320.jpg" media="(max-width: 500px)">
-                            <img src="https://martaveresk.github.io/W-Wave/img/podcast_4.jpg" alt="Фото африканской женщины">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/podcast_4_320.webp" media="(max-width: 500px)">
+                            <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/podcast_4.webp" alt="Фото африканской женщины">
                         </picture>
                         <span class="podcasts__data">5 июня</span>
                         <div class="podcasts__card">
@@ -723,7 +736,7 @@
                         <h2 class="title-h2 broadcast__title">Передачи</h2>
                         <p class="broadcast__subtitle">Автор: </p>
                         <div class="broadcast__select">
-                            <select class="broadcast__select-list" aria-label="Выбор автора" name="select">
+                            <select class="broadcast__select-list" type="checkbox" aria-label="Выбор автора" name="select">
                             <option value="Дмитрий Гутенберг" selected>Дмитрий Гутенберг</option>
                             <option value="Татьяна Флеганова">Татьяна Флеганова</option>
                             <option value="Анна Васильева">Анна Васильева</option>
@@ -741,8 +754,8 @@
                         </button>
                             <div class="broadcast__block">
                                 <picture class="broadcast__img flex">
-                                    <source srcset="https://martaveresk.github.io/W-Wave/img/broadcast_1_320.jpg" media="(max-width: 320px)">
-                                    <img src="https://martaveresk.github.io/W-Wave/img/broadcast_1.jpg" alt="Рисунок печатной мастерской">
+                                    <source srcset="https://martaveresk.github.io/W-Wave/img/broadcast_1_320.webp" media="(max-width: 320px)">
+                                    <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/broadcast_1.webp" alt="Рисунок печатной мастерской">
                                 </picture>
                                 <h4 class="title-h3 broadcast__h4">О людях и книгах</h4>
                                 <p class="broadcast__text">Анонсируется отдельно</p>
@@ -757,8 +770,8 @@
                         </button>
                             <div class="broadcast__block">
                                 <picture class="broadcast__img flex">
-                                    <source srcset="https://martaveresk.github.io/W-Wave/img/broadcast_2_320.jpg" media="(max-width: 320px)">
-                                    <img src="https://martaveresk.github.io/W-Wave/img/broadcast_2.jpg" alt="Рискнок читающего человека">
+                                    <source srcset="https://martaveresk.github.io/W-Wave/img/broadcast_2_320.webp" media="(max-width: 320px)">
+                                    <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/broadcast_2.webp" alt="Рискнок читающего человека">
                                 </picture>
                                 <h4 class="title-h3 broadcast__h4">Графомания td.</h4>
                                 <p class="broadcast__text">По понедельникам в 10:00 </p>
@@ -773,8 +786,8 @@
                         </button>
                             <div class="broadcast__block">
                                 <picture class="broadcast__img flex">
-                                    <source srcset="https://martaveresk.github.io/W-Wave/img/broadcast_3_320.jpg" media="(max-width: 320px)">
-                                    <img src="https://martaveresk.github.io/W-Wave/img/broadcast_3.jpg" alt="Рисунок римского коллизея">
+                                    <source srcset="https://martaveresk.github.io/W-Wave/img/broadcast_3_320.webp" media="(max-width: 320px)">
+                                    <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/broadcast_3.webp" alt="Рисунок римского коллизея">
                                 </picture>
                                 <h4 class="title-h3 broadcast__h4">Не Рим, не Троя</h4>
                                 <p class="broadcast__text">По вторникам в 12:00</p>
@@ -789,8 +802,8 @@
                         </button>
                             <div class="broadcast__block">
                                 <picture class="broadcast__img flex">
-                                    <source srcset="https://martaveresk.github.io/W-Wave/img/broadcast_4_320.jpg" media="(max-width: 320px)">
-                                    <img src="https://martaveresk.github.io/W-Wave/img/broadcast_4.jpg" alt="Русунок думающего человека">
+                                    <source srcset="https://martaveresk.github.io/W-Wave/img/broadcast_4_320.webp" media="(max-width: 320px)">
+                                    <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/broadcast_4.webp" alt="Русунок думающего человека">
                                 </picture>
                                 <h4 class="title-h3 broadcast__h4">Эрудит</h4>
                                 <p class="broadcast__text">По пятницам в 17:00</p>
@@ -805,8 +818,8 @@
                         </button>
                             <div class="broadcast__block">
                                 <picture class="broadcast__img flex">
-                                    <source srcset="https://martaveresk.github.io/W-Wave/img/broadcast_5_320.jpg" media="(max-width: 320px)">
-                                    <img src="https://martaveresk.github.io/W-Wave/img/broadcast_5.jpg" alt="Рисунок зайца на собаке">
+                                    <source srcset="https://martaveresk.github.io/W-Wave/img/broadcast_5_320.webp" media="(max-width: 320px)">
+                                    <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/broadcast_5.webp" alt="Рисунок зайца на собаке">
                                 </picture>
                                 <h4 class="title-h3 broadcast__h4">Тонкости эпох</h4>
                                 <p class="broadcast__text">По субботам в 10:00</p>
@@ -821,8 +834,8 @@
                         </button>
                             <div class="broadcast__block">
                                 <picture class="broadcast__img flex">
-                                    <source srcset="https://martaveresk.github.io/W-Wave/img/broadcast_6_320.jpg" media="(max-width: 320px)">
-                                    <img src="https://martaveresk.github.io/W-Wave/img/broadcast_6.jpg" alt="Рисунок ежика">
+                                    <source srcset="https://martaveresk.github.io/W-Wave/img/broadcast_6_320.webp" media="(max-width: 320px)">
+                                    <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/broadcast_6.webp" alt="Рисунок ежика">
                                 </picture>
                                 <h4 class="title-h3 broadcast__h4">Живые мысли</h4>
                                 <p class="broadcast__text">По воскресеньям в 15:30</p>
@@ -851,8 +864,8 @@
                 <p class="guests__text">Блогеры, арт-критики и&nbsp;деятели искусства, музыканты, молодые учёные и&nbsp;люди науки, историки, филологи и&nbsp;много других интересных гостей!</p>
                 <div class="guests__content flex">
                     <div class="accordion">
-                        <ul class="questions reset-list js-accordion-container">
-                            <li class="accordion__question ac js-enabled">
+                        <ul class="questions reset-list js-accordion-container" role="tablist">
+                            <li class="accordion__question ac js-enabled" role="tab">
                                 <button class="accordion__heading ac-trigger">
                                     <span class="accordion__heading-text">
                                       <span class="accordion__heading-text-wrap">Блогеры</span>
@@ -947,7 +960,7 @@
                                 </div>
                             </li>
 
-                            <li class="accordion__question ac js-enabled">
+                            <li class="accordion__question ac js-enabled" role="tab">
                                 <button class="accordion__heading ac-trigger">
                                     <span class="accordion__heading-text">
                                       <span class="accordion__heading-text-wrap">Арт-критики</span>
@@ -968,7 +981,7 @@
                                 </div>
                             </li>
 
-                            <li class="accordion__question ac js-enabled">
+                            <li class="accordion__question ac js-enabled" role="tab">
                                 <button class="accordion__heading ac-trigger">
                                     <span class="accordion__heading-text">
                                       <span class="accordion__heading-text-wrap">Художники</span>
@@ -989,7 +1002,7 @@
                                 </div>
                             </li>
 
-                            <li class="accordion__question ac js-enabled">
+                            <li class="accordion__question ac js-enabled" role="tab">
                                 <button class="accordion__heading ac-trigger">
                                     <span class="accordion__heading-text">
                                       <span class="accordion__heading-text-wrap">Люди науки</span>
@@ -1010,7 +1023,7 @@
                                 </div>
                             </li>
 
-                            <li class="accordion__question ac js-enabled">
+                            <li class="accordion__question ac js-enabled" role="tab">
                                 <button class="accordion__heading ac-trigger">
                                     <span class="accordion__heading-text">
                                       <span class="accordion__heading-text-wrap">Историки</span>
@@ -1031,7 +1044,7 @@
                                 </div>
                             </li>
 
-                            <li class="accordion__question ac js-enabled">
+                            <li class="accordion__question ac js-enabled" role="tab">
                                 <button class="accordion__heading ac-trigger">
                                     <span class="accordion__heading-text">
                                       <span class="accordion__heading-text-wrap">Филологи</span>
@@ -1059,10 +1072,10 @@
                     <div class="guests__card-wrap flex" id="guest">
                         <div class="guests__card guests__card_active" data-target="martinova">
                             <picture class="guests__img flex">
-                                <source srcset="https://martaveresk.github.io/W-Wave/img/guest_1_320.jpg" media="(max-width: 500px)">
-                                <source srcset="https://martaveresk.github.io/W-Wave/img/guest_1_768.jpg" media="(max-width: 1023px)">
-                                <source srcset="https://martaveresk.github.io/W-Wave/img/guest_1_1024.jpg" media="(max-width: 1200px)">
-                                <img src="https://martaveresk.github.io/W-Wave/img/guest_1.jpg" alt="Фото Ольги Мартыновой">
+                                <source srcset="https://martaveresk.github.io/W-Wave/img/guest_1_320.webp" media="(max-width: 500px)">
+                                <source srcset="https://martaveresk.github.io/W-Wave/img/guest_1_768.webp" media="(max-width: 1023px)">
+                                <source srcset="https://martaveresk.github.io/W-Wave/img/guest_1_1024.webp" media="(max-width: 1200px)">
+                                <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/guest_1.webp" alt="Фото Ольги Мартыновой">
                             </picture>
                             <div class="guests__social flex">
                                 <a class="guests__link flex" href="#!" aria-label="instagram">
@@ -1089,10 +1102,10 @@
                         <!-- empty -->
                         <div class="guests__card" data-target="empty">
                             <picture class="guests__img flex">
-                                <source srcset="https://martaveresk.github.io/W-Wave/img/empty_320.jpg" media="(max-width: 500px)">
-                                <source srcset="https://martaveresk.github.io/W-Wave/img/empty_768.jpg" media="(max-width: 1023px)">
-                                <source srcset="https://martaveresk.github.io/W-Wave/img/empty_1024.jpg" media="(max-width: 1200px)">
-                                <img src="https://martaveresk.github.io/W-Wave/img/empty.jpg" alt="Тут будет фото гостя">
+                                <source srcset="https://martaveresk.github.io/W-Wave/img/empty_320.webp" media="(max-width: 500px)">
+                                <source srcset="https://martaveresk.github.io/W-Wave/img/empty_768.webp" media="(max-width: 1023px)">
+                                <source srcset="https://martaveresk.github.io/W-Wave/img/empty_1024.webp" media="(max-width: 1200px)">
+                                <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/empty.webp" alt="Тут будет фото гостя">
                             </picture>
                             <div class="guests__social flex">
                                 <a class="guests__link flex" href="#!" aria-label="instagram">
@@ -1182,9 +1195,9 @@
                                         <button class="btn-reset playlists__card" aria-label="Плейлист Ploho"></button>
                                         <div class="playlists__block-top">
                                             <picture class="playlists__img flex">
-                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_1_320.jpg" media="(max-width: 767px)">
-                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_1_1024.jpg" media="(max-width: 1124px)">
-                                                <img src="https://martaveresk.github.io/W-Wave/img/playlists_1.jpg" alt="Фото Ploho">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_1_320.webp" media="(max-width: 767px)">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_1_1024.webp" media="(max-width: 1124px)">
+                                                <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/playlists_1.webp" alt="Фото Ploho">
                                             </picture>
                                             <div class="playlists__icon playlists__icon_ru"></div>
                                             <div class="playlists__btn flex">
@@ -1200,9 +1213,9 @@
                                         <button class="btn-reset playlists__card" aria-label="Плейлист Molchat Doma"></button>
                                         <div class="playlists__block-top">
                                             <picture class="playlists__img flex">
-                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_2_320.jpg" media="(max-width: 767px)">
-                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_2_1024.jpg" media="(max-width: 1124px)">
-                                                <img src="https://martaveresk.github.io/W-Wave/img/playlists_2.jpg" alt="Фото Molchat Doma">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_2_320.webp" media="(max-width: 767px)">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_2_1024.webp" media="(max-width: 1124px)">
+                                                <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/playlists_2.webp" alt="Фото Molchat Doma">
                                             </picture>
                                             <div class="playlists__icon playlists__icon_ru"></div>
                                             <div class="playlists__btn flex">
@@ -1218,9 +1231,9 @@
                                         <button class="btn-reset playlists__card" aria-label="Плейлист Motorama"></button>
                                         <div class="playlists__block-top">
                                             <picture class="playlists__img flex">
-                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_3_320.jpg" media="(max-width: 767px)">
-                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_3_1024.jpg" media="(max-width: 1124px)">
-                                                <img src="https://martaveresk.github.io/W-Wave/img/playlists_3.jpg" alt="Фото Motorama">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_3_320.webp" media="(max-width: 767px)">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_3_1024.webp" media="(max-width: 1124px)">
+                                                <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/playlists_3.webp" alt="Фото Motorama">
                                             </picture>
                                             <div class="playlists__icon playlists__icon_ru"></div>
                                             <div class="playlists__btn flex">
@@ -1236,9 +1249,9 @@
                                         <button class="btn-reset playlists__card" aria-label="Плейлист Human Tetris"></button>
                                         <div class="playlists__block-top">
                                             <picture class="playlists__img flex">
-                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_4_320.jpg" media="(max-width: 767px)">
-                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_4_1024.jpg" media="(max-width: 1124px)">
-                                                <img src="https://martaveresk.github.io/W-Wave/img/playlists_4.jpg" alt="Фото Human Tetris">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_4_320.webp" media="(max-width: 767px)">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_4_1024.webp" media="(max-width: 1124px)">
+                                                <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/playlists_4.webp" alt="Фото Human Tetris">
                                             </picture>
                                             <div class="playlists__icon playlists__icon_ru"></div>
                                             <div class="playlists__btn flex">
@@ -1254,9 +1267,9 @@
                                         <button class="btn-reset playlists__card" aria-label="Плейлист Буерак"></button>
                                         <div class="playlists__block-top">
                                             <picture class="playlists__img flex">
-                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_5_320.jpg" media="(max-width: 767px)">
-                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_5_1024.jpg" media="(max-width: 1124px)">
-                                                <img src="https://martaveresk.github.io/W-Wave/img/playlists_5.jpg" alt="Фото Буерак">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_5_320.webp" media="(max-width: 767px)">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_5_1024.webp" media="(max-width: 1124px)">
+                                                <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/playlists_5.webp" alt="Фото Буерак">
                                             </picture>
                                             <div class="playlists__icon playlists__icon_ru"></div>
                                             <div class="playlists__btn flex">
@@ -1272,9 +1285,9 @@
                                         <button class="btn-reset playlists__card" aria-label="Плейлист Июльские Дни"></button>
                                         <div class="playlists__block-top">
                                             <picture class="playlists__img flex">
-                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_6_320.jpg" media="(max-width: 767px)">
-                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_6_1024.jpg" media="(max-width: 1124px)">
-                                                <img src="https://martaveresk.github.io/W-Wave/img/playlists_6.jpg" alt="Фото Июльские Дни">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_6_320.webp" media="(max-width: 767px)">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_6_1024.webp" media="(max-width: 1124px)">
+                                                <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/playlists_6.webp" alt="Фото Июльские Дни">
                                             </picture>
                                             <div class="playlists__icon playlists__icon_ru"></div>
                                             <div class="playlists__btn flex">
@@ -1290,9 +1303,9 @@
                                         <button class="btn-reset playlists__card" aria-label="Плейлист Joy Division"></button>
                                         <div class="playlists__block-top">
                                             <picture class="playlists__img flex">
-                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_7_320.jpg" media="(max-width: 767px)">
-                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_7_1024.jpg" media="(max-width: 1124px)">
-                                                <img src="https://martaveresk.github.io/W-Wave/img/playlists_7.jpg" alt="Фото Joy Division">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_7_320.webp" media="(max-width: 767px)">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_7_1024.webp" media="(max-width: 1124px)">
+                                                <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/playlists_7.webp" alt="Фото Joy Division">
                                             </picture>
                                             <div class="playlists__icon playlists__icon_uk"></div>
                                             <div class="playlists__btn flex">
@@ -1308,9 +1321,9 @@
                                         <button class="btn-reset playlists__card" aria-label="Плейлист The Cure"></button>
                                         <div class="playlists__block-top">
                                             <picture class="playlists__img flex">
-                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_8_320.jpg" media="(max-width: 767px)">
-                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_8_1024.jpg" media="(max-width: 1124px)">
-                                                <img src="https://martaveresk.github.io/W-Wave/img/playlists_8.jpg" alt="Фото The Cure">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_8_320.webp" media="(max-width: 767px)">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_8_1024.webp" media="(max-width: 1124px)">
+                                                <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/playlists_8.webp" alt="Фото The Cure">
                                             </picture>
                                             <div class="playlists__icon playlists__icon_uk"></div>
                                             <div class="playlists__btn flex">
@@ -1326,9 +1339,9 @@
                                         <button class="btn-reset playlists__card" aria-label="Плейлист The Smiths"></button>
                                         <div class="playlists__block-top">
                                             <picture class="playlists__img flex">
-                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_9_320.jpg" media="(max-width: 767px)">
-                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_9_1024.jpg" media="(max-width: 1124px)">
-                                                <img src="https://martaveresk.github.io/W-Wave/img/playlists_9.jpg" alt="Фото The Smiths">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_9_320.webp" media="(max-width: 767px)">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_9_1024.webp" media="(max-width: 1124px)">
+                                                <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/playlists_9.webp" alt="Фото The Smiths">
                                             </picture>
                                             <div class="playlists__icon playlists__icon_uk"></div>
                                             <div class="playlists__btn flex">
@@ -1344,9 +1357,9 @@
                                         <button class="btn-reset playlists__card" aria-label="Плейлист New Order"></button>
                                         <div class="playlists__block-top">
                                             <picture class="playlists__img flex">
-                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_10_320.jpg" media="(max-width: 767px)">
-                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_10_1024.jpg" media="(max-width: 1124px)">
-                                                <img src="https://martaveresk.github.io/W-Wave/img/playlists_10.jpg" alt="Фото New Order">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_10_320.webp" media="(max-width: 767px)">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_10_1024.webp" media="(max-width: 1124px)">
+                                                <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/playlists_10.webp" alt="Фото New Order">
                                             </picture>
                                             <div class="playlists__icon playlists__icon_uk"></div>
                                             <div class="playlists__btn flex">
@@ -1362,9 +1375,9 @@
                                         <button class="btn-reset playlists__card" aria-label="Плейлист Bauhaus"></button>
                                         <div class="playlists__block-top">
                                             <picture class="playlists__img flex">
-                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_11_320.jpg" media="(max-width: 767px)">
-                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_11_1024.jpg" media="(max-width: 1124px)">
-                                                <img src="https://martaveresk.github.io/W-Wave/img/playlists_11.jpg" alt="Фото New Order">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_11_320.webp" media="(max-width: 767px)">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_11_1024.webp" media="(max-width: 1124px)">
+                                                <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/playlists_11.webp" alt="Фото New Order">
                                             </picture>
                                             <div class="playlists__icon playlists__icon_uk"></div>
                                             <div class="playlists__btn flex">
@@ -1380,9 +1393,9 @@
                                         <button class="btn-reset playlists__card" aria-label="Плейлист Gang Of Four"></button>
                                         <div class="playlists__block-top">
                                             <picture class="playlists__img flex">
-                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_12_320.jpg" media="(max-width: 767px)">
-                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_12_1024.jpg" media="(max-width: 1124px)">
-                                                <img src="https://martaveresk.github.io/W-Wave/img/playlists_12.jpg" alt="Фото Gang Of Four">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_12_320.webp" media="(max-width: 767px)">
+                                                <source srcset="https://martaveresk.github.io/W-Wave/img/playlists_12_1024.webp" media="(max-width: 1124px)">
+                                                <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/playlists_12.webp" alt="Фото Gang Of Four">
                                             </picture>
                                             <div class="playlists__icon playlists__icon_uk"></div>
                                             <div class="playlists__btn flex">
@@ -1403,7 +1416,7 @@
                                         <button class="btn-reset playlists__card" aria-label="Плейлист Ploho"></button>
                                         <div class="playlists__block-top">
                                             <picture class="playlists__img flex">
-                                                <img src="https://martaveresk.github.io/W-Wave/img/playlists_1.jpg" alt="Фото Ploho">
+                                                <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/playlists_1.webp" alt="Фото Ploho">
                                             </picture>
                                             <div class="playlists__icon playlists__icon_ru"></div>
                                             <div class="playlists__bgc"></div>
@@ -1420,7 +1433,7 @@
                                         <button class="btn-reset playlists__card" aria-label="Плейлист Ploho"></button>
                                         <div class="playlists__block-top">
                                             <picture class="playlists__img flex">
-                                                <img src="https://martaveresk.github.io/W-Wave/img/playlists_1.jpg" alt="Фото Ploho">
+                                                <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/playlists_1.webp" alt="Фото Ploho">
                                             </picture>
                                             <div class="playlists__icon playlists__icon_ru"></div>
                                             <div class="playlists__bgc"></div>
@@ -1437,7 +1450,7 @@
                                         <button class="btn-reset playlists__card" aria-label="Плейлист Ploho"></button>
                                         <div class="playlists__block-top">
                                             <picture class="playlists__img flex">
-                                                <img src="https://martaveresk.github.io/W-Wave/img/playlists_1.jpg" alt="Фото Ploho">
+                                                <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/playlists_1.webp" alt="Фото Ploho">
                                             </picture>
                                             <div class="playlists__icon playlists__icon_ru"></div>
                                             <div class="playlists__bgc"></div>
@@ -1454,7 +1467,7 @@
                                         <button class="btn-reset playlists__card" aria-label="Плейлист Ploho"></button>
                                         <div class="playlists__block-top">
                                             <picture class="playlists__img flex">
-                                                <img src="https://martaveresk.github.io/W-Wave/img/playlists_1.jpg" alt="Фото Ploho">
+                                                <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/playlists_1.webp" alt="Фото Ploho">
                                             </picture>
                                             <div class="playlists__icon playlists__icon_ru"></div>
                                             <div class="playlists__bgc"></div>
@@ -1471,7 +1484,7 @@
                                         <button class="btn-reset playlists__card" aria-label="Плейлист Ploho"></button>
                                         <div class="playlists__block-top">
                                             <picture class="playlists__img flex">
-                                                <img src="https://martaveresk.github.io/W-Wave/img/playlists_1.jpg" alt="Фото Ploho">
+                                                <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/playlists_1.webp" alt="Фото Ploho">
                                             </picture>
                                             <div class="playlists__icon playlists__icon_ru"></div>
                                             <div class="playlists__bgc"></div>
@@ -1488,7 +1501,7 @@
                                         <button class="btn-reset playlists__card" aria-label="Плейлист Ploho"></button>
                                         <div class="playlists__block-top">
                                             <picture class="playlists__img flex">
-                                                <img src="https://martaveresk.github.io/W-Wave/img/playlists_1.jpg" alt="Фото Ploho">
+                                                <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/playlists_1.webp" alt="Фото Ploho">
                                             </picture>
                                             <div class="playlists__icon playlists__icon_ru"></div>
                                             <div class="playlists__bgc"></div>
@@ -1523,17 +1536,17 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide advan__pic">
                                     <picture>
-                                        <img class="advan__img" src="https://martaveresk.github.io/W-Wave/img/advan_1x.png" alt="Радиоприемник W-Wave бордовый">
+                                        <img class="lazyload advan__img" data-src="https://martaveresk.github.io/W-Wave/img/advan_1x.webp" alt="Радиоприемник W-Wave бордовый">
                                     </picture>
                                 </div>
                                 <div class="swiper-slide advan__pic">
                                     <picture>
-                                        <img class="advan__img" src="https://martaveresk.github.io/W-Wave/img/advan_1x.png" alt="Радиоприемник W-Wave сине-зелёный">
+                                        <img class="lazyload advan__img" data-src="https://martaveresk.github.io/W-Wave/img/advan_1x.webp" alt="Радиоприемник W-Wave сине-зелёный">
                                     </picture>
                                 </div>
                                 <div class="swiper-slide advan__pic">
                                     <picture>
-                                        <img class="advan__img" src="https://martaveresk.github.io/W-Wave/img/advan_1x.png" alt="Радиоприемник W-Wave зелёный">
+                                        <img class="lazyload advan__img" data-src="https://martaveresk.github.io/W-Wave/img/advan_1x.webp" alt="Радиоприемник W-Wave зелёный">
                                     </picture>
                                 </div>
                             </div>
@@ -1580,40 +1593,40 @@
                 <ul class="list about__list flex">
                     <li class="about__item">
                         <picture class="about__img flex">
-                            <source srcset="https://martaveresk.github.io/W-Wave/img/about_1_320.jpg" media="(max-width: 500px)">
-                            <source srcset="https://martaveresk.github.io/W-Wave/img/about_1.jpg" media="(max-width: 1023px)">
-                            <source srcset="https://martaveresk.github.io/W-Wave/img/about_1_1024.jpg" media="(max-width: 1200px)">
-                            <img src="https://martaveresk.github.io/W-Wave/img/about_1.jpg" alt="Фото Дмитрия Гутенберга">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/about_1_320.webp" media="(max-width: 500px)">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/about_1.webp" media="(max-width: 1023px)">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/about_1_1024.webp" media="(max-width: 1200px)">
+                            <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/about_1.webp" alt="Фото Дмитрия Гутенберга">
                         </picture>
                         <h4 class="title-h3 about__h3">Дмитрий Гутенберг</h4>
                         <p class="about__text">Эксперт (ну, почти) по&nbsp;всем вопросам (почти).</p>
                     </li>
                     <li class="about__item">
                         <picture class="about__img flex">
-                            <source srcset="https://martaveresk.github.io/W-Wave/img/about_2_320.jpg" media="(max-width: 500px)">
-                            <source srcset="https://martaveresk.github.io/W-Wave/img/about_2.jpg" media="(max-width: 1023px)">
-                            <source srcset="https://martaveresk.github.io/W-Wave/img/about_2_1024.jpg" media="(max-width: 1200px)">
-                            <img src="https://martaveresk.github.io/W-Wave/img/about_2.jpg" alt="Фото Дмитрия Гутенберга">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/about_2_320.webp" media="(max-width: 500px)">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/about_2.webp" media="(max-width: 1023px)">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/about_2_1024.webp" media="(max-width: 1200px)">
+                            <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/about_2.webp" alt="Фото Дмитрия Гутенберга">
                         </picture>
                         <h4 class="title-h3 about__h3">Анна Васильева</h4>
                         <p class="about__text">Как я&nbsp;здесь оказалась? А&nbsp;главное&nbsp;&mdash; зачем?</p>
                     </li>
                     <li class="about__item">
                         <picture class="about__img flex">
-                            <source srcset="https://martaveresk.github.io/W-Wave/img/about_3_320.jpg" media="(max-width: 500px)">
-                            <source srcset="https://martaveresk.github.io/W-Wave/img/about_3.jpg" media="(max-width: 1023px)">
-                            <source srcset="https://martaveresk.github.io/W-Wave/img/about_3_1024.jpg" media="(max-width: 1200px)">
-                            <img src="https://martaveresk.github.io/W-Wave/img/about_3.jpg" alt="Фото Дмитрия Гутенберга">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/about_3_320.webp" media="(max-width: 500px)">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/about_3.webp" media="(max-width: 1023px)">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/about_3_1024.webp" media="(max-width: 1200px)">
+                            <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/about_3.webp" alt="Фото Дмитрия Гутенберга">
                         </picture>
                         <h4 class="title-h3 about__h3">Пётр Дмитриевский</h4>
                         <p class="about__text">Господа! Внимание!! Благодарю за&nbsp;внимание!!!</p>
                     </li>
                     <li class="about__item">
                         <picture class="about__img flex">
-                            <source srcset="https://martaveresk.github.io/W-Wave/img/about_4_320.jpg" media="(max-width: 500px)">
-                            <source srcset="https://martaveresk.github.io/W-Wave/img/about_4.jpg" media="(max-width: 1023px)">
-                            <source srcset="https://martaveresk.github.io/W-Wave/img/about_4_1024.jpg" media="(max-width: 1200px)">
-                            <img src="https://martaveresk.github.io/W-Wave/img/about_4.jpg" alt="Фото Дмитрия Гутенберга">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/about_4_320.webp" media="(max-width: 500px)">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/about_4.webp" media="(max-width: 1023px)">
+                            <source srcset="https://martaveresk.github.io/W-Wave/img/about_4_1024.webp" media="(max-width: 1200px)">
+                            <img class="lazyload" data-src="https://martaveresk.github.io/W-Wave/img/about_4.webp" alt="Фото Дмитрия Гутенберга">
                         </picture>
                         <h4 class="title-h3 about__h3">Татьяна Флеганова</h4>
                         <p class="about__text">Одна я&nbsp;в&nbsp;пальто стою красивая, а&nbsp;вокруг...</p>
@@ -1653,7 +1666,7 @@
                 <div class="footer__wrap flex">
                     <div class="footer__left">
                         <a class="flex">
-                            <img class="footer__logo" src="https://martaveresk.github.io/W-Wave/img/footer_logo.png" alt="Лого W-Wave">
+                            <img class="lazyload footer__logo" data-src="https://martaveresk.github.io/W-Wave/img/footer_logo.webp" alt="Лого W-Wave">
                         </a>
                         <div class="footer__links flex">
                             <a class="footer__link flex" href="#!" aria-label="youtube">

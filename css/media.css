@@ -216,7 +216,7 @@
             position: absolute;
             content: '';
             width: 112px;
-            background-image: url(../img/header_spiral_768.png);
+            background-image: url(../img/header_spiral_768.webp);
             background-repeat: no-repeat;
             background-size: contain;
         }
